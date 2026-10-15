@@ -1,5 +1,10 @@
 # 3kingdoms-engine
 
+Play the production web game (Google sign-in required):
+
+- [Main game — 四战征程](https://3kingdoms.cc.cd/)
+- [Special battle — 虎牢关之战 · Voxel Special](https://3kingdoms.cc.cd/special/hulao/)
+
 Source-only snapshot of the native/WebAssembly game and web backend. Images,
 game media, credentials and player data are excluded. Read
 [SOURCE_ONLY.md](SOURCE_ONLY.md) for repository scope and local asset requirements.
