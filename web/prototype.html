@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三国志曹操传 · 四战体验版</title>
+<style>body{margin:0;background:#202424;color:#efe5cc;font:16px system-ui}main{max-width:960px;margin:auto}h1{font-size:20px;margin:12px 16px}canvas{display:block;width:100%;height:auto;aspect-ratio:960/1120;outline:none;image-rendering:pixelated}#status{padding:12px 16px;min-height:24px}button{font:inherit;padding:8px 18px;margin:0 6px 8px 16px;background:#3e4c45;color:#efe5cc;border:1px solid #738377;border-radius:5px}footer{padding:8px 16px;color:#b3bcaf;font-size:14px}</style>
+<main><h1>三国志曹操传 · 四战体验版</h1><div id="status" role="status">正在加载游戏资源……</div><canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+<button id="save" disabled>保存本地进度</button><button id="load" disabled>读取本地进度</button>
+<button id="export" disabled>导出备份</button><button id="import" disabled>导入备份</button><input id="backup" type="file" accept=".json" hidden>
+<footer>0.9：反击、连击、经验、15种策略、伏兵与剧情事件。F6 选择十个存档位；B 开始独立战场，胜利后下一战继承成长。存档保存在当前浏览器，可导出备份。</footer></main>
+<script>
+const statusEl=document.querySelector('#status');
+let storageBusy=false;
+const call=(name,result,args=[],values=[])=>Module.ccall(name,result,args,values);
+const dbPromise=new Promise((resolve,reject)=>{const r=indexedDB.open('caocao-opening-prototype',1);r.onupgradeneeded=()=>r.result.createObjectStore('snapshots');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
+dbPromise.catch(()=>{});
+async function storage(load){if(storageBusy)return;storageBusy=true;try{
+ const scenario=call('prototype_scenario','number'), selected=call('prototype_slot','number');
+ const slot=selected?'manual-slot-'+selected:scenario?'slot-battle-'+scenario:'slot-1';
+ const db=await dbPromise;
+ if(call('prototype_busy','number'))throw Error('攻击动画中，请等待。');
+ if(load){const blob=await new Promise((resolve,reject)=>{const tx=db.transaction('snapshots','readonly');const r=tx.objectStore('snapshots').get(slot);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
+  if(call('prototype_scenario','number')!==scenario||call('prototype_slot','number')!==selected)throw Error('战场已改变，请重新读取。');
+  if(typeof blob!=='string')throw Error('没有可读取的存档。');
+  if(call('prototype_busy','number'))throw Error('攻击动画中，请等待。');
+  if(!call('prototype_restore','number',['string'],[blob]))throw Error(call('prototype_error','string'));
+ }else{const blob=call('prototype_snapshot','string');if(!blob)throw Error(call('prototype_error','string')||'无法生成存档。');
+  await new Promise((resolve,reject)=>{const tx=db.transaction('snapshots','readwrite');tx.objectStore('snapshots').put(blob,slot);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('保存中断，原存档未改动。'));});
+ }
+ statusEl.textContent=load?'已读取本地存档。':'已保存本地进度。';document.querySelector('#canvas').focus();
+}catch(e){statusEl.textContent='存档操作失败：'+e.message;}finally{storageBusy=false;}}
+window.prototypeExport=()=>{try{if(call('prototype_busy','number'))throw Error('动画中，请等待。');const text=call('prototype_snapshot','string');if(!text)throw Error(call('prototype_error','string'));const a=document.createElement('a'),url=URL.createObjectURL(new Blob([text],{type:'application/json'}));a.href=url;a.download='caocao-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}catch(e){statusEl.textContent=e.message;}};
+window.prototypeImport=()=>document.querySelector('#backup').click();
+document.querySelector('#backup').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>200000)throw Error('存档过大。');const text=await file.text();if(call('prototype_busy','number'))throw Error('动画中，请等待。');if(!call('prototype_restore','number',['string'],[text]))throw Error(call('prototype_error','string'));statusEl.textContent='已导入备份；保存后才会写入选择的存档位。';}catch(e){statusEl.textContent='导入失败：'+e.message;}finally{e.target.value='';}};
+document.querySelector('#export').onclick=window.prototypeExport;document.querySelector('#import').onclick=window.prototypeImport;
+window.prototypeSave=()=>storage(false);window.prototypeLoad=()=>storage(true);
+document.querySelector('#save').onclick=window.prototypeSave;document.querySelector('#load').onclick=window.prototypeLoad;
+var Module={canvas:document.querySelector('#canvas'),print:console.log,printErr:console.error,setStatus:s=>{if(s)statusEl.textContent=s;},onRuntimeInitialized(){statusEl.textContent='已就绪。点击我军开始行动。';document.querySelectorAll('button').forEach(b=>b.disabled=false);Module.canvas.focus();},onAbort(reason){statusEl.textContent='游戏加载失败：'+reason;}};
+</script>{{{ SCRIPT }}}</html>

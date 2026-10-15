@@ -1,0 +1,2162 @@
+{
+  "0x4014f8": {
+    "name": "MEFF resource loader",
+    "feature": "Effects",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Original loader/player paths exercised for opening effects; other resources not fully covered.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4016ab": {
+    "name": "MEFF cleanup",
+    "feature": "Effects",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Cleanup after observed effect playback.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x401e3c": {
+    "name": "MEFF target selection",
+    "feature": "Effects",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Target setup within observed effect player.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x401e5c": {
+    "name": "MEFF effect playback",
+    "feature": "Effects",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Original compositor and frame sequencing; host raster/audio boundaries remain.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x402f21": {
+    "name": "MCALL preload initiation",
+    "feature": "Effects",
+    "evidence": "tools/mcall_probe.py",
+    "scope": "MCALL05 path; not every summon resource.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x402f7f": {
+    "name": "MCALL preload worker",
+    "feature": "Effects",
+    "evidence": "tools/mcall_probe.py",
+    "scope": "Original loading worker with host I/O substituted.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x403014": {
+    "name": "MCALL playback",
+    "feature": "Effects",
+    "evidence": "tools/mcall_probe.py",
+    "scope": "MCALL05 original frames, masks and sequence.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x403340": {
+    "name": "Tick wait request",
+    "feature": "Timing",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Frequently hooked host timing boundary; actual wall-clock behavior not established.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x4036f9": {
+    "name": "Battle tile background restore/redraw request",
+    "feature": "Rendering",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Observed calls at raster boundary; complete host composition not established.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x403b8f": {
+    "name": "Attack actor pose preparation",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Original sprite loading, flags and direction in strike controller.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x403d85": {
+    "name": "Attack target pose preparation",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Original target preparation in observed strike animation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4044e9": {
+    "name": "Physical strike animation sequence",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Frame/color/pixel-hash sequences compared; wall-clock playback not established.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x405744": {
+    "name": "Critical-hit speech gate and text selection",
+    "feature": "Physical combat",
+    "evidence": "tools/critical_speech_probe.py",
+    "scope": "Original gate and message index, including RNG ordering in tested paths.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x405889": {
+    "name": "Apply physical strike to target",
+    "feature": "Physical combat",
+    "evidence": "tools/strike_application_probe.py",
+    "scope": "HP/MP/status/equipment mutations; automatic-item path is an explicit boundary.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x405ce6": {
+    "name": "Double-strike chance calculation",
+    "feature": "Physical combat",
+    "evidence": "tools/strike_probe.py",
+    "scope": "Original chance fixture stores this result as double; the initial map draft incorrectly swapped it with405d69.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x405d69": {
+    "name": "Critical-hit chance calculation",
+    "feature": "Physical combat",
+    "evidence": "tools/strike_probe.py",
+    "scope": "Original chance fixture stores this result as critical; the initial map draft incorrectly swapped it with405ce6.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x405e03": {
+    "name": "Plan strike damage, critical roll and experience",
+    "feature": "Physical combat",
+    "evidence": "tools/strike_probe.py",
+    "scope": "Original ordered targets, RNG and outputs; does not itself establish complete action playback.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x406181": {
+    "name": "Decide another strike",
+    "feature": "Physical combat",
+    "evidence": "tools/strike_probe.py",
+    "scope": "Original follow-up strike gate/RNG and critical reset.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4061fc": {
+    "name": "Initialize physical attack controller",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_controller_probe.py",
+    "scope": "Called by physical controller; observed single-target paths.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40639a": {
+    "name": "Counterattack eligibility and dispatch",
+    "feature": "Physical combat",
+    "evidence": "tools/counter_probe.py",
+    "scope": "Eligibility/getters execute; recursive attack request is a boundary in isolated fixture.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4064f1": {
+    "name": "Physical attack controller",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_controller_probe.py",
+    "scope": "Bounded complete single-target cases; party UI/automatic items and all later paths not complete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x406730": {
+    "name": "Advance battle animation tick",
+    "feature": "Timing",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Observed tick update within attack playback.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4073b8": {
+    "name": "Apply character level growth",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Numeric growth verified; not every live battle level-up presentation path.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4075a7": {
+    "name": "Select character portrait",
+    "feature": "Unit records",
+    "evidence": "tools/unit_probe.py",
+    "scope": "512 original character records; campaign-stage-zero inputs.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4077d0": {
+    "name": "Map class ID to class-family index",
+    "feature": "Unit records",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Reads this+0x2b: class<=38 returns class/3;39..52 returns class-26; otherwise AL=27. Does not initialize equipment.",
+    "semantic_status": "static + scoped probe",
+    "kind": "function candidate"
+  },
+  "0x407907": {
+    "name": "Weapon usability query",
+    "feature": "Equipment",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Getter used by battle actions; full unusable-weapon completion remains unresolved.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x407a09": {
+    "name": "Equipment-effect predicate",
+    "feature": "Equipment",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Original effect checks used by verified movement/combat rules.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x407af2": {
+    "name": "Equipment-effect strength/percentage query",
+    "feature": "Equipment",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Original stat/effect callers observed; not all inventory actions.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x407fe7": {
+    "name": "Initialize class/level-dependent equipment slot",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Original gear fixture calls this for slots0/1 over all53 classes and levels1..50. Not the character-promotion routine.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4082d6": {
+    "name": "Apply equipment experience",
+    "feature": "Experience",
+    "evidence": "tools/experience_probe.py",
+    "scope": "Record changes tested; equipment level-up window captured as boundary.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4083ef": {
+    "name": "Equipment level-up presentation",
+    "feature": "Experience",
+    "evidence": "tools/experience_probe.py",
+    "scope": "Observed request/hooked boundary; full window behavior unresolved.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x408950": {
+    "name": "Apply character experience",
+    "feature": "Experience",
+    "evidence": "tools/experience_probe.py",
+    "scope": "No-animation argument and numeric growth verified; battle presentation incomplete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x408be3": {
+    "name": "Load persistent character record",
+    "feature": "Unit records",
+    "evidence": "tools/unit_probe.py",
+    "scope": "Original Data.e5 loader tested for all512 characters.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4093ef": {
+    "name": "Load class record",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Class record loading used by growth tests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x409600": {
+    "name": "Item collectible flag getter",
+    "feature": "Equipment",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Original getter establishes the50 collectible-item subset.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40c14f": {
+    "name": "Party average level for joining",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Order-sensitive original arithmetic quirk retained.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40c28c": {
+    "name": "Join character to party",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Reload, relative level, growth, class and equipment paths observed.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40c537": {
+    "name": "Load item record",
+    "feature": "Equipment",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original104 Data.e5 item records.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40ddaf": {
+    "name": "Load tactic definitions",
+    "feature": "Tactics",
+    "evidence": "tools/ai_decision_probe.py",
+    "scope": "Original68 tactic records loaded from Data.e5.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40e499": {
+    "name": "GBK text formatting/layout helper",
+    "feature": "Text",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Original panel formatter call graph; host glyph raster is substituted.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40eb54": {
+    "name": "Wrap formatter position into configured span",
+    "feature": "Text",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Repeatedly subtracts (this+0x10 minus this+0x0c plus1) from unsigned argument, then writes argument+lower_bound to this+4. Full text setup is broader.",
+    "semantic_status": "static + scoped probe",
+    "kind": "function candidate"
+  },
+  "0x40faa0": {
+    "name": "Dispatch formatted glyph drawing",
+    "feature": "Text",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Observation hook captures text state; original downstream formatter executes.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40f548": {
+    "name": "Glyph raster boundary",
+    "feature": "Text",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Observed GBK character and coordinates; original font pixels not reproduced here.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x40fcb1": {
+    "name": "Read EEX byte and advance pointer/count",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Returns next byte in AL; increments reader pointer at+12 and numeric count at+8.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40fce2": {
+    "name": "Read little-endian EEX 16-bit value",
+    "feature": "Scripts",
+    "evidence": "tools/battle_events_probe.py",
+    "scope": "Calls byte reader twice, combines low byte then high byte.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4100a1": {
+    "name": "Select eligible battle script event",
+    "feature": "Scripts",
+    "evidence": "tools/battle_events_probe.py",
+    "scope": "Original section1 conditions, flags and outcome latches exercised.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4105a8": {
+    "name": "Execute EEX event body",
+    "feature": "Scripts",
+    "evidence": "tools/poison_post_probe.py",
+    "scope": "Interpreter control flow and original body dispatch; some body handlers remain unimplemented in port.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41084e": {
+    "name": "Battle event dispatch wrapper",
+    "feature": "Scripts",
+    "evidence": "tools/poison_post_probe.py",
+    "scope": "Original caller/selector/body sequencing.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4109ef": {
+    "name": "EEX instruction/condition dispatch",
+    "feature": "Scripts",
+    "evidence": "tools/battle_events_probe.py",
+    "scope": "Original dispatcher exercised by opening condition fixtures.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x412230": {
+    "name": "Opcode68: battle deployment setup",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Exact supplied S_00 typed bytes.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4122f1": {
+    "name": "Opcode69: scenario configuration",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original opening scenario/controller settings.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4125c5": {
+    "name": "Opcode70: unit deployment table",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original opening unit descriptor records.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4129a4": {
+    "name": "Opcode71: unit deployment table variant",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original opening descriptor paths.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x412dd6": {
+    "name": "Opcode72: deployment finalization",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Exact opening handler inputs; other campaign uses not asserted.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x413010": {
+    "name": "Opcode48: appearance dispatcher (static)",
+    "feature": "Scripts",
+    "evidence": "docs/FORMATS.md",
+    "scope": "Typed reads and story/battle dispatch identified; do not claim full placement/removal semantics for every mode.",
+    "semantic_status": "static only",
+    "kind": "function candidate"
+  },
+  "0x41311c": {
+    "name": "Opcode49: character disappearance/removal",
+    "feature": "Scripts",
+    "evidence": "tools/tutorial_exit_probe.py; tools/disappearance_probe.py; docs/CERBERUS-RE.md",
+    "scope": "Single concrete battlefield unit selector, mode1 disappearance verified after the fresh-profile tutorial. Area/dynamic-ID/story variants remain unsupported.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4132d4": {
+    "name": "Opcode50: scripted movement",
+    "feature": "Scripts",
+    "evidence": "tools/script_movement_probe.py",
+    "scope": "Original typed handler, unit selector and movement wrapper.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x413661": {
+    "name": "Opcode20: dialogue",
+    "feature": "Scripts",
+    "evidence": "tools/poison_post_probe.py",
+    "scope": "Original speaker lookup/text copy and dialogue focus; window boundary captured.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x413c0e": {
+    "name": "Opcode26: objective message/banner",
+    "feature": "Scripts",
+    "evidence": "tools/objective_banner_probe.py",
+    "scope": "Battle mode dispatches44bd27; original objective layout/pause compared.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4142b2": {
+    "name": "Opcode11: variable/flag write",
+    "feature": "Scripts",
+    "evidence": "tools/script_movement_probe.py",
+    "scope": "Original event completion flags executed.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4146d4": {
+    "name": "Opcode78: scripted AI assignment",
+    "feature": "Scripts",
+    "evidence": "tools/script_ai_probe.py",
+    "scope": "Single-unit non-targeted modes covered; targeted modes remain open.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4148fe": {
+    "name": "Opcode59: party join dispatcher",
+    "feature": "Scripts",
+    "evidence": "docs/FORMATS.md",
+    "scope": "Opening joins dispatch40c28c; removal branch not complete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x414f42": {
+    "name": "Opcode76: reinforcement appearance",
+    "feature": "Scripts",
+    "evidence": "tools/reinforcement_probe.py",
+    "scope": "Original placement/lifecycle/mirror effects for ordinary forms.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41557b": {
+    "name": "Opcode83: scripted retirement",
+    "feature": "Scripts",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Opening non-party removal form; not all selector/mode combinations.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41581c": {
+    "name": "Opcode36: music change",
+    "feature": "Scripts",
+    "evidence": "tools/arrival_event_probe.py",
+    "scope": "Original music request ID observed; playback helper is outside this EXE map.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41590d": {
+    "name": "Opcode16: tutorial dispatcher",
+    "feature": "Scripts",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Calls433359 and collection-dependent branches.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x415d92": {
+    "name": "Opcode74: selected party",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original opening party selection values.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x415e31": {
+    "name": "Opcode75: deployment position override",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "One28-byte instruction in this edition.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x415f65": {
+    "name": "Opcode79: unit facing",
+    "feature": "Scripts",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Original direction/target flags and waits.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x416129": {
+    "name": "Opcode80: battle animation",
+    "feature": "Scripts",
+    "evidence": "tools/animation_probe.py",
+    "scope": "Original animation dispatch; verified subset of animation kinds.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x416319": {
+    "name": "Opcode62: equipment assignment",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Opening story equipment and collection write; full battle equipment UI unresolved.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x416e17": {
+    "name": "Opcode92: highlight target unit",
+    "feature": "Scripts",
+    "evidence": "tools/highlight_probe.py",
+    "scope": "Original first-active-slot lookup, panel and highlight schedule.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4183f7": {
+    "name": "Read typed EEX argument",
+    "feature": "Scripts",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Original type validation, stream count and pointer movement.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x418ed4": {
+    "name": "Resolve game file path",
+    "feature": "File/archive I/O",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Observed host filesystem boundary; path resolution internals not verified.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x419184": {
+    "name": "Read bytes from opened resource/file",
+    "feature": "File/archive I/O",
+    "evidence": "tools/attack_controller_probe.py",
+    "scope": "Original caller offsets and lengths observed; host I/O replaced.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x4192c5": {
+    "name": "Close resource/file handle",
+    "feature": "File/archive I/O",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Observed archive close boundary.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x41a190": {
+    "name": "Party-membership query",
+    "feature": "Unit records",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Used by original joining/retirement paths.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41a1b0": {
+    "name": "Write collection save byte",
+    "feature": "Collection saves",
+    "evidence": "tools/deployment_probe.py",
+    "scope": "Write index/value captured; original SVCMN.E5S never modified.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x41a284": {
+    "name": "Read collection save byte",
+    "feature": "Collection saves",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Indexed108-byte collection input; missing-file initialization is outside probe.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x41dc43": {
+    "name": "Automatic consumable-item use",
+    "feature": "Items",
+    "evidence": "tools/strike_application_probe.py",
+    "scope": "Observed action boundary; full effects/presentation not yet verified.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x41fb35": {
+    "name": "Open E5 archive",
+    "feature": "File/archive I/O",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Archive names and calls observed; original archive I/O substituted in bounded probes.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x41fc89": {
+    "name": "Load indexed E5 archive block",
+    "feature": "File/archive I/O",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Original resource identifiers and destinations captured.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x420ab6": {
+    "name": "Terrain permits fire-type tactics",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "All30 terrain predicates tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x420b17": {
+    "name": "Terrain permits water-type tactics",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "All30 terrain predicates tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x420b42": {
+    "name": "Terrain permits wind-type tactics",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "All30 terrain predicates tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x420b98": {
+    "name": "Terrain permits earth-type tactics",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "All30 terrain predicates tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4214bf": {
+    "name": "Dispatch/play planned tactic effect",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Opening poison and associated MEFF paths; not every tactic.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4218d6": {
+    "name": "Tactic caster pose and caption sequence",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_cast_probe.py",
+    "scope": "Original caster sprite, waits, speech/caption and MP-independent presentation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x421f04": {
+    "name": "Tactic hit reaction callback",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Original poison target reaction frame requests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4224a8": {
+    "name": "Apply tactic result to target",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_application_probe.py",
+    "scope": "Poison target HP/status/XP effects; automatic-item/level paths have explicit limits.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x422f0d": {
+    "name": "Finalize tactic caster action",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_application_probe.py",
+    "scope": "Enemy MP/flags/experience path observed; party level presentation remains unresolved.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x42335b": {
+    "name": "Tactic action controller",
+    "feature": "Tactics",
+    "evidence": "tools/poison_controller_probe.py",
+    "scope": "Opening enemy poison controller verified; general tactic dispatch incomplete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4259ac": {
+    "name": "Tactic completion tail inside425627",
+    "feature": "Tactics",
+    "evidence": "src/engine.cpp",
+    "scope": "Caller-frame block calls422f0d and returns controller+0x4ac; not independently callable. Used as an unresolved no-target probe stop.",
+    "semantic_status": "static internal block",
+    "kind": "internal block"
+  },
+  "0x42c4e0": {
+    "name": "Host message/event pump boundary",
+    "feature": "Timing",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Called between animation waits; host UI behavior not emulated.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x42c557": {
+    "name": "Dialogue/text presentation helper",
+    "feature": "Text",
+    "evidence": "tools/poison_post_probe.py",
+    "scope": "Observed presentation boundary in sequential script caller.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x42c646": {
+    "name": "Interruptible tick wait",
+    "feature": "Timing",
+    "evidence": "tools/objective_banner_probe.py",
+    "scope": "20-tick objective pause and input interruption tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x42d5f1": {
+    "name": "Dialogue window/text request",
+    "feature": "Text",
+    "evidence": "tools/tutorial_basic_probe.py",
+    "scope": "Speaker and GBK text captured; original window composition not executed.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x42de12": {
+    "name": "Choice dialog",
+    "feature": "Text",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Original supplied options/default and caller response paths observed; Win32 dialog is a boundary.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x42f699": {
+    "name": "Tactic-name caption",
+    "feature": "Text",
+    "evidence": "tools/tactic_cast_probe.py",
+    "scope": "Original caption GBK bytes, glyph positions and background requests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x42fb10": {
+    "name": "Initialize quantized palette/color lookup",
+    "feature": "Palette",
+    "evidence": "tools/combat_palette_probe.py",
+    "scope": "Original4096 color-cube entries tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x42fd5a": {
+    "name": "Indexed effect compositor",
+    "feature": "Palette",
+    "evidence": "tools/tactic_effect_probe.py",
+    "scope": "Original integer blending over all palette pairs for observed effect parameters.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x430480": {
+    "name": "Palette darkening transform",
+    "feature": "Palette",
+    "evidence": "tools/palette_probe.py",
+    "scope": "Original palette-derived index mapping; not generic RGB alpha blending.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43087a": {
+    "name": "Indexed grayscale transform",
+    "feature": "Palette",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Zero-transparent; quantized RGB byte sum divided by3 then color-cube lookup.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x433359": {
+    "name": "Select and sequence opening tutorial branches",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Four fresh-profile lessons and accept/decline paths have bounded fixtures; collection-dependent reward bodies remain unverified.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4333d2": {
+    "name": "Tutorial continue/decline choice",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_ally_probe.py",
+    "scope": "Caller continuation choice after lesson; verify boundary from static control flow.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43353c": {
+    "name": "Tutorial lesson1: cursor and basic unit information",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_basic_probe.py",
+    "scope": "Original mark/clear/wait/dialogue/unit panel sequence.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x433726": {
+    "name": "Paint tutorial cursor mark",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_basic_probe.py",
+    "scope": "Writes effect-plane value3.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43378d": {
+    "name": "Clear tutorial cursor mark",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_basic_probe.py",
+    "scope": "Writes255 rather than restoring an old effect value.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4337f4": {
+    "name": "Tutorial lesson2: allies, enemies and movement range",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_ally_probe.py",
+    "scope": "Guide walk, Liu Bei panel, green movement/range mask and cleanup.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x433bc8": {
+    "name": "Tutorial lesson3: movement, cancellation and command menu",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_actions_probe.py",
+    "scope": "Original demo move/cancel, blue range, menu responses and continuation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43419f": {
+    "name": "Tutorial lesson4: terrain and affinity",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_terrain_probe.py",
+    "scope": "Original terrain panel, tactic indicators, affinity dialogue and guide movement.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4347ff": {
+    "name": "Tutorial campaign-completion reward branch",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Observed branch entry; reward body not yet verified.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x434d33": {
+    "name": "Tutorial all-treasures reward branch",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Observed branch entry; reward body not yet verified.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x434f84": {
+    "name": "Tutorial setup and collection checks",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_probe.py",
+    "scope": "Reads explicit collection bytes; computes completed routes and all-item status.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4350c0": {
+    "name": "Restore demonstrated movement position",
+    "feature": "Tutorial",
+    "evidence": "tools/tutorial_actions_probe.py",
+    "scope": "Coordinates/occupancy change; retains facing/flags in original tested cancellation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4350f0": {
+    "name": "Set green movement overlay flag",
+    "feature": "Rendering",
+    "evidence": "tools/tutorial_ally_probe.py",
+    "scope": "Writes camera+0x68.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x435110": {
+    "name": "Set tactic-menu enable flag (control0x508)",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Writes argument to this+0x38.45badb maps that field to control0x508, strategy/tactics; this is not the attack flag.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x435130": {
+    "name": "Set standby-menu enable flag (control0x50b)",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Writes argument to this+0x40.45badb maps this field to control0x50b, standby, and also forces it on during initialization.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x435182": {
+    "name": "Terrain recovery predicate",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "All30 terrain IDs; recovery18..22.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4351da": {
+    "name": "Calculate facing towards a target",
+    "feature": "Movement",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Relative positions, ties and original direction semantics tested.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x435829": {
+    "name": "Apply facing/target preparation",
+    "feature": "Physical combat",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Original controller-facing preparation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x436586": {
+    "name": "Build range masks and ordered target lists",
+    "feature": "Movement",
+    "evidence": "tools/range_probe.py",
+    "scope": "Original shape/mode/side/HP/preferred-target behavior and grids.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x437a04": {
+    "name": "Range target-list helper",
+    "feature": "Movement",
+    "evidence": "tools/range_probe.py",
+    "scope": "Executed within original range builder; helper details need caller context.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x437e2e": {
+    "name": "Reconstruct movement route and fallback scores",
+    "feature": "Movement",
+    "evidence": "tools/route_probe.py",
+    "scope": "Preserves original scratch/termination quirks on failed descent.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x438308": {
+    "name": "Movement/tactic search and availability dispatcher",
+    "feature": "Movement",
+    "evidence": "tools/movement_probe.py",
+    "scope": "Modes0/2/8 grids and mode4 tactic availability covered by separate probes.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x438965": {
+    "name": "AI single-target physical attack scoring",
+    "feature": "AI",
+    "evidence": "tools/ai_attack_probe.py",
+    "scope": "Area attack classes explicitly excluded.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4390ef": {
+    "name": "AI tactic target eligibility",
+    "feature": "AI",
+    "evidence": "tools/tactic_scoring_probe.py",
+    "scope": "Opening tactic target predicates.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4391dc": {
+    "name": "AI tactic candidate selection",
+    "feature": "AI",
+    "evidence": "tools/tactic_scoring_probe.py",
+    "scope": "Original opening tactic candidate/score update path.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4395ae": {
+    "name": "AI tactic target scoring",
+    "feature": "AI",
+    "evidence": "tools/tactic_scoring_probe.py",
+    "scope": "Original estimates, effects and RNG-sensitive score cases.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43a28a": {
+    "name": "Prepare AI distance/threat/score grids",
+    "feature": "AI",
+    "evidence": "tools/range_probe.py",
+    "scope": "Original candidate setup and output scratch grids.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43a956": {
+    "name": "Execute selected AI movement",
+    "feature": "AI",
+    "evidence": "tools/ai_movement_probe.py",
+    "scope": "Original route, destination, actor flags and movement-frame requests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43ad1c": {
+    "name": "Choose and execute AI unit action",
+    "feature": "AI",
+    "evidence": "tools/ai_decision_probe.py",
+    "scope": "Decision/walk and bounded opening action paths; not all tactics/area actions.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43b50d": {
+    "name": "Physical hit chance",
+    "feature": "Physical combat",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Real unit/equipment getters; deterministic hit threshold computation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43b73f": {
+    "name": "Tactic hit chance",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_scoring_probe.py",
+    "scope": "Original opening tactic/stat/equipment cases.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43bc4b": {
+    "name": "Physical damage calculation",
+    "feature": "Physical combat",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Terrain/class/equipment/counter scaling and exact random adjustment.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43bfaa": {
+    "name": "Tactic damage/estimate",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_scoring_probe.py",
+    "scope": "Runtime damage may consume RNG; estimate mode preserves it in tested cases.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43c7d6": {
+    "name": "Turn-start stat-grade recovery",
+    "feature": "Turn maintenance",
+    "evidence": "tools/recovery_probe.py",
+    "scope": "Original grade/status getters and RNG; presentation boundary separate.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43c975": {
+    "name": "Turn-start abnormal-status recovery",
+    "feature": "Turn maintenance",
+    "evidence": "tools/recovery_probe.py",
+    "scope": "Original status recovery and neighbor/equipment gates.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43cddd": {
+    "name": "Turn-start regeneration and experience effects",
+    "feature": "Turn maintenance",
+    "evidence": "tools/maintenance_probe.py",
+    "scope": "HP/MP/XP numeric effects tested; level-up presentation not complete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43dc99": {
+    "name": "Unit-facing tactic command wrapper",
+    "feature": "Tactics",
+    "evidence": "tools/tactic_plan_probe.py",
+    "scope": "Calls425627(tactic,live-slot); on nonzero result marks action state and updates UI. First-poison plan probe stops inside callees before effect playback; this is not just the plan builder.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43e572": {
+    "name": "Choose idle/wounded battle frame",
+    "feature": "Rendering",
+    "evidence": "tools/battle_initialization_probe.py",
+    "scope": "Eight tick values and low-HP threshold for opening units.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43e69f": {
+    "name": "Status/grade-change presentation",
+    "feature": "Turn maintenance",
+    "evidence": "tools/recovery_probe.py",
+    "scope": "Observed pre-mutation effect call; general animation path unresolved.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x43f040": {
+    "name": "Find legal deployment tile",
+    "feature": "Movement",
+    "evidence": "tools/placement_probe.py",
+    "scope": "Blocked/occupied fallback ordering and terrain rules.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43f74f": {
+    "name": "Effective movement points",
+    "feature": "Movement",
+    "evidence": "tools/movement_probe.py",
+    "scope": "Class/equipment/grade/status combinations.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43f7cf": {
+    "name": "Terrain movement cost",
+    "feature": "Terrain",
+    "evidence": "tools/battle_initialization_probe.py",
+    "scope": "53 classes,30 terrain types and movement-equipment effect.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43f84d": {
+    "name": "Terrain combat-affinity multiplier",
+    "feature": "Terrain",
+    "evidence": "tools/physical_resolution_probe.py",
+    "scope": "Actual getter used by physical stats/damage.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43f8be": {
+    "name": "Attack range kind",
+    "feature": "Movement",
+    "evidence": "tools/range_probe.py",
+    "scope": "Class/accessory-dependent range identifier.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43fc48": {
+    "name": "Select battle sprite",
+    "feature": "Rendering",
+    "evidence": "tools/battle_initialization_probe.py",
+    "scope": "Original unit/class/side mapping for opening units.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43fcc9": {
+    "name": "Redraw one unit tile",
+    "feature": "Rendering",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Observed lifecycle/occupancy-aware raster boundary; complete host drawing unresolved.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x4404bd": {
+    "name": "Unit/attack/tactic information panel",
+    "feature": "Panels",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Modes0/1/2 compared with original formatter/getters and raster requests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x441488": {
+    "name": "Selected-unit panel/range/idle sequence",
+    "feature": "Player input",
+    "evidence": "tools/selection_probe.py",
+    "scope": "Selection requests and interrupt/tick behavior; not complete player command loop.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x441744": {
+    "name": "Unit death/retirement handler",
+    "feature": "Battle outcomes",
+    "evidence": "tools/defeated_unit_probe.py",
+    "scope": "Non-party death mode(0,0), and scripted mode(1,0) on guide/party/ally/enemy fixtures. Mode1 retains lifecycle/status/mirror/target cleanup without mode0 persistent-counter branch. Party death remains incomplete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4419b6": {
+    "name": "Death/removal animation mode dispatcher",
+    "feature": "Battle outcomes",
+    "evidence": "tools/battle_actions_probe.py; tools/disappearance_probe.py",
+    "scope": "Mode0 blink and mode1 source frames, cropped/masked pixels, sounds and waits observed. Mode2 remains unverified.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44201b": {
+    "name": "Render a unit walking along its route",
+    "feature": "Movement",
+    "evidence": "tools/movement_animation_probe.py",
+    "scope": "Original frames, timing requests, mirroring and composition boundaries.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x442b03": {
+    "name": "Relocate unit and update occupancy",
+    "feature": "Movement",
+    "evidence": "tools/tutorial_actions_probe.py",
+    "scope": "Tutorial cancellation executes original relocation; not a full undo of all unit state.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44a1d4": {
+    "name": "Classify battlefield environment/weather",
+    "feature": "Turn maintenance",
+    "evidence": "tools/environment_probe.py",
+    "scope": "Five regional rows/six selector states from original table.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44ac28": {
+    "name": "Player/enemy turn banner",
+    "feature": "Panels",
+    "evidence": "tools/turn_banner_probe.py",
+    "scope": "Sweep, text/shadow requests and action-flag reset order.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44bd27": {
+    "name": "Objective/victory-condition banner",
+    "feature": "Panels",
+    "evidence": "tools/objective_banner_probe.py",
+    "scope": "Original row sweep, GBK layout and interruptible terminal pause.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44c38b": {
+    "name": "Find initial phase camera focus",
+    "feature": "Turn control",
+    "evidence": "tools/battle_entry_probe.py",
+    "scope": "Party/enemy/allied focus search and original ordering.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44c601": {
+    "name": "Run eligible battle events",
+    "feature": "Turn control",
+    "evidence": "tools/poison_post_probe.py",
+    "scope": "Bounded original selector/body dispatch and event completion order.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44cc85": {
+    "name": "Construct live battle unit",
+    "feature": "Unit records",
+    "evidence": "tools/battle_initialization_probe.py",
+    "scope": "26 opening units match original live/persistent construction.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44da7a": {
+    "name": "Assign AI action priorities",
+    "feature": "AI",
+    "evidence": "tools/ai_priority_probe.py",
+    "scope": "Original post-introduction and synthetic priority cases.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44df61": {
+    "name": "Apply phase-wide poison maintenance",
+    "feature": "Turn maintenance",
+    "evidence": "tools/maintenance_probe.py; tools/phase_maintenance_probe.py; docs/CERBERUS-RE.md",
+    "scope": "Phase-side slot scan and poison HP calculation. Sequential fresh-profile turn-two probe executes NPC numeric panel before HP setter: ally21044->33, RNG unchanged during poison. Recovery consumes RNG earlier. Host raster/cursor/refresh remain explicit boundaries; party numeric panel still unsupported.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44e0d9": {
+    "name": "Player phase entry and input gate",
+    "feature": "Player input",
+    "evidence": "tools/player_input_probe.py",
+    "scope": "Original disabled-ASave continuation executes hover, actual move/menu/wait/cancel, action-event gate, death/event scans and end-turn confirmation under supplied tile/poll/timer/focus/panel inputs. Candidate scan includes completion/confusion and differs from entry filter. No continuous turn-two/physical mouse claim. Cerberus decompile remains incomplete at44e1cd; raw continuation assembly and original execution are separate evidence.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44e851": {
+    "name": "Allied/enemy phase caller",
+    "feature": "Turn control",
+    "evidence": "tools/allied_phase_probe.py",
+    "scope": "Source-ordered AI actions, event/death/maintenance sequence within tested opening paths.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44ed93": {
+    "name": "Turn controller/player turn start",
+    "feature": "Turn control",
+    "evidence": "tools/phase_transition_probe.py",
+    "scope": "Event dispatch, start maintenance and phase transitions; complete battle loop unfinished.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44fa1f": {
+    "name": "Convert battlefield tile to screen coordinates",
+    "feature": "Rendering",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Original helper used by removal/effect animation.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44fc4b": {
+    "name": "Choose panel position avoiding attack participants",
+    "feature": "Panels",
+    "evidence": "tools/attack_camera_probe.py",
+    "scope": "Original camera and actor/target avoidance cases.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x450036": {
+    "name": "Party combat-result/experience presentation",
+    "feature": "Experience",
+    "evidence": "src/panel.cpp",
+    "scope": "Unverified party branch; NPC numeric panel does not cover it.",
+    "semantic_status": "static or boundary only",
+    "kind": "function candidate"
+  },
+  "0x450984": {
+    "name": "Apply/display numeric HP/MP result sequence",
+    "feature": "Panels",
+    "evidence": "tools/damage_panel_probe.py; tools/phase_maintenance_probe.py; docs/CERBERUS-RE.md",
+    "scope": "272 NPC HP/MP panel sequences, including absent-opponent sentinel255 and all viewport positions; original GBK glyph coordinates and five interpolation steps. Sequential poison displays old HP until return. Party result/XP branch450036 unresolved; host viewport supplied, Windows rasterization unverified.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45137c": {
+    "name": "Terrain-masked unit sprite blitter",
+    "feature": "Rendering",
+    "evidence": "tools/disappearance_probe.py; docs/CERBERUS-RE.md",
+    "scope": "Original source copy and static terrain masks verified for cropped48px mode1 exit frames. Animated terrain13 overlay remains unported.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x451913": {
+    "name": "Draw indexed image/icon",
+    "feature": "Rendering",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Observed source pixels/placement/mode; low-level host backend not executed.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x451c03": {
+    "name": "Set blue movement overlay flag",
+    "feature": "Rendering",
+    "evidence": "tools/tutorial_actions_probe.py",
+    "scope": "Writes camera+0x64; distinct from green flag.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45218f": {
+    "name": "Battlefield tile/region painter",
+    "feature": "Rendering",
+    "evidence": "tools/overlay_probe.py",
+    "scope": "Original checker/range/effect/cursor/unit layer order tested at raster boundaries.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x452744": {
+    "name": "Draw terrain effect/fire mark",
+    "feature": "Rendering",
+    "evidence": "tools/fire_probe.py",
+    "scope": "Original Mark.e5 frame offset for ticks/effect-plane values.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4539dc": {
+    "name": "Build displayed attack-range mask",
+    "feature": "Rendering",
+    "evidence": "tools/overlay_probe.py",
+    "scope": "Original range bits and mask contents.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x453a40": {
+    "name": "Set target highlight mask",
+    "feature": "Rendering",
+    "evidence": "tools/highlight_probe.py",
+    "scope": "Clears1600 bytes;255 sentinel disables highlight.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x453b13": {
+    "name": "Full battlefield redraw request",
+    "feature": "Rendering",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original redraw dispatch; host composition omitted.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x453b48": {
+    "name": "Battlefield region redraw wrapper",
+    "feature": "Rendering",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Original cursor/panel callers; forwards tile rectangle to painter.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x453c17": {
+    "name": "Draw battlefield information window",
+    "feature": "Panels",
+    "evidence": "tools/panel_probe.py",
+    "scope": "Window dimensions observed; frame/background rendering remains partly provisional.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x453e32": {
+    "name": "Close battlefield information panel",
+    "feature": "Panels",
+    "evidence": "tools/tutorial_ally_probe.py",
+    "scope": "Panel lifetime/cleanup request observed; selection cursor has separate lifetime.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x4544d3": {
+    "name": "Set world-tile selection cursor",
+    "feature": "Player input",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Converts to camera-relative bytes and redraws affected region.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45461c": {
+    "name": "Clear selection cursor",
+    "feature": "Player input",
+    "evidence": "tools/tutorial_cursor_probe.py",
+    "scope": "Writes ff/ff before optional redraw.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x454b7e": {
+    "name": "Set camera tile origin and redraw",
+    "feature": "Rendering",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original pixel camera setter tested in camera-path fixtures.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x454cef": {
+    "name": "Scroll camera to tile-origin destination",
+    "feature": "Rendering",
+    "evidence": "tools/tutorial_cursor_probe.py",
+    "scope": "Unconditionally clears cursor even when origin unchanged.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x454f10": {
+    "name": "Ensure unit is visible in camera",
+    "feature": "Rendering",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original visibility camera path; differs from centering.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45503f": {
+    "name": "Center camera around world tile",
+    "feature": "Rendering",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original clamping and incremental path for20x20 map.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x455123": {
+    "name": "Choose attack camera destination",
+    "feature": "Rendering",
+    "evidence": "tools/attack_camera_probe.py",
+    "scope": "Both attacker and target framing constraints.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45576d": {
+    "name": "Terrain information panel",
+    "feature": "Panels",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Original3x2 tile window, preview tile, terrain labels, grayscale and enabled tactic icons.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x455c3a": {
+    "name": "Terrain impassable-label predicate",
+    "feature": "Terrain",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Display label over30 terrain IDs; not class-specific movement cost.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x455e44": {
+    "name": "Command popup horizontal positioning",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Original client/pixel coordinates and width handling.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x455e6b": {
+    "name": "Command popup vertical positioning",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Original signed halving/clamping and client origin.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x456140": {
+    "name": "Place/change fire terrain effect",
+    "feature": "Terrain",
+    "evidence": "tools/fire_probe.py",
+    "scope": "Original placement records, terrain26 and effect marks; removal forms incomplete.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x457428": {
+    "name": "Scripted unit facing sequence",
+    "feature": "Rendering",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Direction resolution, mirror flags and optional waits.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45778f": {
+    "name": "Scripted battle animation dispatcher",
+    "feature": "Rendering",
+    "evidence": "tools/animation_probe.py",
+    "scope": "Original verified animation kinds; other kinds retained as unresolved.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x459487": {
+    "name": "Scripted movement wrapper",
+    "feature": "Movement",
+    "evidence": "tools/script_movement_probe.py",
+    "scope": "Selector, destination search/fallback, movement and final facing.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45965d": {
+    "name": "Battle dialogue with speaker focus",
+    "feature": "Text",
+    "evidence": "tools/tutorial_basic_probe.py",
+    "scope": "Original camera/speaker handling before text window; pending action-flag presentation remains.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x459777": {
+    "name": "Alternative-speaker dialogue",
+    "feature": "Text",
+    "evidence": "src/engine.cpp",
+    "scope": "Only opening off-board guide form observed; deployed alternative-speaker branches unresolved. Descriptive wrapper name does not establish those branches.",
+    "semantic_status": "static or boundary only",
+    "kind": "function candidate"
+  },
+  "0x45a7b7": {
+    "name": "Scripted unit retirement wrapper",
+    "feature": "Battle outcomes",
+    "evidence": "tools/battle_actions_probe.py",
+    "scope": "Sets flag128, invokes441744(mode args), then clears flag128.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45a80f": {
+    "name": "Candidate regional/multi-unit retirement wrapper",
+    "feature": "Battle outcomes",
+    "evidence": "docs/evidence/exe-map/op49.asm",
+    "scope": "Statically identified alternate opcode49 branch; not tested.",
+    "semantic_status": "static or boundary only",
+    "kind": "function candidate"
+  },
+  "0x45aa5c": {
+    "name": "Apply status/grade change after presentation",
+    "feature": "Turn maintenance",
+    "evidence": "tools/recovery_probe.py",
+    "scope": "Original presentation-before-mutation caller.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45ade5": {
+    "name": "Area abnormal-status selector",
+    "feature": "Turn maintenance",
+    "evidence": "tools/confusion_probe.py",
+    "scope": "Original area/confusion selection and status application order.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45bba0": {
+    "name": "Initialize command-menu anchor and default flags",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Original tile/client anchor and default enablement flags; separate45bcd0 initialization callback applies them to controls.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45bc23": {
+    "name": "Command menu message callback",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Original WM_COMMAND results/cancellation at Win32 boundaries.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45bcd0": {
+    "name": "Command-menu initialization callback",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Obtains window handle from this+4 and calls45badb, which positions the popup and applies enabled controls. Not a one-option flag setter.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x45bcea": {
+    "name": "Cancel command menu and close dialog",
+    "feature": "Command menu",
+    "evidence": "tools/tutorial_menu_probe.py",
+    "scope": "Writes result255 through45bab4 and closes the dialog. Does not open or initialize a menu.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x473202": {
+    "name": "Draw caption-window background and border",
+    "feature": "Panels",
+    "evidence": "tools/caption_window_probe.py",
+    "scope": "Original type0 raster requests.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4745fe": {
+    "name": "Music track change dispatcher",
+    "feature": "Audio",
+    "evidence": "tools/arrival_event_probe.py",
+    "scope": "Observed original track IDs; external music components are separate binaries.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x474652": {
+    "name": "Stop sound effect and reset playback state",
+    "feature": "Audio",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Calls sndPlaySoundA(NULL,0); writes -1 and0 to the sound object fields.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x47467a": {
+    "name": "Play numbered sound effect",
+    "feature": "Audio",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original filename/API flag lookup; actual listening quality outside probe.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x474a07": {
+    "name": "Script sound repeat/stop dispatcher",
+    "feature": "Audio",
+    "evidence": "tools/presentation_probe.py",
+    "scope": "Original script repeat/stop request forms.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x479a01": {
+    "name": "Refresh persistent character UI/window",
+    "feature": "UI",
+    "evidence": "tools/experience_probe.py",
+    "scope": "Observed host update request; full window rendering unresolved.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x47e251": {
+    "name": "Capture indexed framebuffer rectangle",
+    "feature": "Rendering",
+    "evidence": "tools/terrain_panel_probe.py",
+    "scope": "Observed rectangle/pixel destination; supplied known background in isolated probes.",
+    "semantic_status": "boundary observations; internals incomplete",
+    "kind": "function candidate"
+  },
+  "0x47fa40": {
+    "name": "Get resource buffer plus offset",
+    "feature": "File/archive I/O",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Observed descriptor helper used by frame loaders.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x47fad0": {
+    "name": "Unsigned-byte saturating subtraction",
+    "feature": "Runtime helper",
+    "evidence": "tools/initialization_probe.py",
+    "scope": "Returns low-byte max(arg1-arg2,0) using unsigned byte comparison; upper EAX is not an asserted return value.",
+    "semantic_status": "static + scoped probe",
+    "kind": "function candidate"
+  },
+  "0x47fae7": {
+    "name": "Advance original linear-congruential RNG",
+    "feature": "Randomness",
+    "evidence": "tools/executable_probe.py",
+    "scope": "state=state*1103515245+12345; output(state>>16)&32767.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x47fb13": {
+    "name": "Bounded random number",
+    "feature": "Randomness",
+    "evidence": "tools/environment_probe.py",
+    "scope": "Bounds below2 return0 without consuming state; otherwise modulo.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x47fcfd": {
+    "name": "Copy memory buffer",
+    "feature": "Runtime helper",
+    "evidence": "tools/attack_animation_probe.py",
+    "scope": "Observed source/destination/count order; original API name unavailable.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x4817e0": {
+    "name": "PE entry point / process startup",
+    "feature": "Runtime/startup",
+    "evidence": "PE.OptionalHeader.AddressOfEntryPoint",
+    "scope": "Entry address from PE header; CRT startup and downstream main need static review.",
+    "semantic_status": "static or boundary only",
+    "kind": "function candidate"
+  },
+  "0x40971d": {
+    "name": "Load/lock a Windows image resource",
+    "feature": "Assets",
+    "scope": "Calls FindResourceA, LoadResource and LockResource; exact image-use callers not fully traced.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40af77": {
+    "name": "LOGO.E5 resource setup",
+    "feature": "Assets",
+    "scope": "References LOGO.E5 and resource helpers; loading family inferred statically.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40b338": {
+    "name": "Load image-list DLL and release module",
+    "feature": "Assets",
+    "scope": "Calls LoadLibraryA and FreeLibrary; DLL resource extraction behavior not executed for this map.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40b5d1": {
+    "name": "MgcIcon.dll resource wrapper",
+    "feature": "Assets",
+    "scope": "Literal MgcIcon.dll identifies tactic-icon resource family.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40b669": {
+    "name": "ItemIcon.dll resource wrapper",
+    "feature": "Assets",
+    "scope": "Literal ItemIcon.dll identifies item-icon resource family.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40b701": {
+    "name": "CmdIcon.dll resource wrapper",
+    "feature": "Assets",
+    "scope": "Literal CmdIcon.dll identifies command-icon resource family.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40d79c": {
+    "name": "Inventory-full guard/message path",
+    "feature": "Equipment",
+    "scope": "Chinese warehouse-full/sell-an-item literal; complete purchase semantics not recovered.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40fd1a": {
+    "name": "Read little-endian EEX32-bit value",
+    "feature": "Scripts",
+    "scope": "Combines two successive16-bit reads, low word then high word.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x40fd4a": {
+    "name": "Read NUL-terminated EEX string pointer",
+    "feature": "Scripts",
+    "scope": "Returns current pointer and advances through terminating NUL; does not increment numeric byte counter for string contents.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x4143c2": {
+    "name": "Acquired-item notification path",
+    "feature": "Scripts",
+    "scope": "References 得到了%s; exact script opcode/complete inventory mutation not established here.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x417ed2": {
+    "name": "Build/load scenario EEX filename",
+    "feature": "Scripts",
+    "scope": "References xx.EEX and x.EEX templates; full scene-transition behavior unverified.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x419529": {
+    "name": "Formatted execution-error message",
+    "feature": "Runtime/startup",
+    "scope": "Calls wsprintfA and MessageBoxA with game execution-error title.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41a518": {
+    "name": "Save-slot status/description display",
+    "feature": "Legacy saves",
+    "scope": "Literals encode chapter/turn/battle-end metadata; not a decoded save schema.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41a995": {
+    "name": "Build/read SV00D.E5S slot filename path",
+    "feature": "Legacy saves",
+    "scope": "Literal SV00D.E5S and D.E5S; full save-file format remains unverified.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41ad06": {
+    "name": "Load-progress confirmation and validation UI",
+    "feature": "Legacy saves",
+    "scope": "Chinese load/invalid-save strings and downstream calls; no original user save was opened or changed for this analysis.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41b16a": {
+    "name": "Save-progress confirmation and completion UI",
+    "feature": "Legacy saves",
+    "scope": "Chinese save/overwrite/completion strings; actual serializer schema not recovered by these strings.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41bf43": {
+    "name": "Open environment/settings dialog",
+    "feature": "UI",
+    "scope": "DialogBoxParamA with KANKYOU resource.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41d4db": {
+    "name": "Class-promotion and learned-tactic presentation",
+    "feature": "Experience",
+    "scope": "Chinese promotion/learned-strategy messages, UNIT_SPC.E5 resource; numeric promotion effects need further review.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41e9b4": {
+    "name": "Rasterize text with Song typeface through GDI",
+    "feature": "Text",
+    "scope": "CreateFontA with 宋体, text measurement and TextOutA; not exact recovered portable glyph metrics.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41f072": {
+    "name": "Open MCI avivideo device",
+    "feature": "Movies",
+    "scope": "mciSendCommandA and avivideo literal; static media-device identification.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41f13b": {
+    "name": "Open movie and install playback window hook",
+    "feature": "Movies",
+    "scope": "MCI commands, SetWindowsHookExA, animation-open error dialog; playback behavior not executed here.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x41f4bd": {
+    "name": "MCI movie playback request/error path",
+    "feature": "Movies",
+    "scope": "MCI commands and cannot-play-animation filename message.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x425627": {
+    "name": "Tactic action preparation/dispatch caller",
+    "feature": "Tactics",
+    "scope": "Invoked by43dc99; initializes controller, checks availability and reaches effects/completion tail. General cancellation paths remain unresolved.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x431a3e": {
+    "name": "Credits text sequence",
+    "feature": "Ending/credits",
+    "scope": "References production credits and staff names; full timing/layout unverified.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x431e13": {
+    "name": "Final-campaign statistics presentation",
+    "feature": "Ending/credits",
+    "scope": "References final results, sorties, retreats and final level; no full-campaign equivalence claim.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x432546": {
+    "name": "Simplified-Chinese localization credits",
+    "feature": "Ending/credits",
+    "scope": "Chinese simplified edition and Tianjin Koei company literals.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x433404": {
+    "name": "Initial tutorial offer dialogue and choice",
+    "feature": "Tutorial",
+    "scope": "Static dialogue literals and choice call; complete caller semantics bounded by tutorial fixtures.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x433512": {
+    "name": "Tutorial farewell dialogue",
+    "feature": "Tutorial",
+    "scope": "Two original Chinese farewell lines through battle-speech helper.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x43d538": {
+    "name": "Player movement validation/message path",
+    "feature": "Player input",
+    "scope": "502 bounded original controller cases: ordinary option flags, eligibility, distance, supplied tile selection/cancellation/retry, original Chinese messages, route/walking, camera, occupancy and moved flag. macOS/Linux/Wasm helper matches requests and state. Windows picker, outer player loop, action menu and full turn-two integration remain unverified.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate",
+    "evidence": "tools/player_movement_probe.py; src/player_movement.cpp; tests/movement_tests.cpp; docs/CERBERUS-RE.md"
+  },
+  "0x43dc21": {
+    "name": "Player tactic callback",
+    "feature": "Player input",
+    "evidence": "output/reverse-engineering/cerberus/exports/caocao/Ekd5.exe/dossiers/0x43dc21/decompile.c",
+    "scope": "Cerberus static dossier only. Actual player targeting/setup/completion and party result presentation remain to be verified. Existing AI arithmetic tests do not establish this caller. JEV059 reviewed investigation boundaries only.",
+    "semantic_status": "static only",
+    "kind": "function candidate"
+  },
+  "0x449cec": {
+    "name": "Show victory conditions or unavailable message",
+    "feature": "Panels",
+    "scope": "Literals 胜利条件 and 现在无法显示; not the battle outcome evaluator.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x44b046": {
+    "name": "Spoils/reward item presentation",
+    "feature": "Battle outcomes",
+    "scope": "Literals 战利品 and ITEM.E5; actual award mutation/order unverified.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x44b5a8": {
+    "name": "Battle/campaign completion and cash-reward display",
+    "feature": "Battle outcomes",
+    "scope": "Literals 作战结束, 全程作战结束, 酬金; reward assignment and post-battle continuation unverified.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x44bac2": {
+    "name": "Battle-start outside-in banner",
+    "feature": "Rendering",
+    "evidence": "tools/start_banner_probe.py; tools/tutorial_exit_probe.py; docs/CERBERUS-RE.md",
+    "scope": "Outer columns inward using checker31; text48/64px with three shadows, wait20; row-wise clear and final redraw. Host Windows font/raster boundaries remain.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x44d427": {
+    "name": "Battle initialization/entry sequence candidate",
+    "feature": "Turn control",
+    "scope": "Static entry/SEH frame; internal cleanup block44d8a0 is part of this routine, not its own function.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x45badb": {
+    "name": "Position menu and enable command controls",
+    "feature": "Command menu",
+    "scope": "Original init callback maps fields+34/+38/+3c/+40 to controls507/508/509/50b; forces standby enabled.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate",
+    "evidence": "tools/tutorial_menu_probe.py"
+  },
+  "0x4743e1": {
+    "name": "CD-audio DLL initialization/open request",
+    "feature": "Audio",
+    "scope": "Calls imported CDAudioInitialize, GetNumDrives and Open with SOUSOU label; retries through error dialog on -1. This proves caller requests only, not successful device initialization or DLL behavior.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x474458": {
+    "name": "CD audio track-play wrapper",
+    "feature": "Audio",
+    "scope": "Calls CDAudioGetDriveLetter and CDAudioPlayTrack; external DLL behavior outside executable.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x474777": {
+    "name": "Resolve WAV filename and invoke sound API",
+    "feature": "Audio",
+    "scope": "SE00.WAV and SE_M_00.WAV families; sndPlaySoundA; listening/pacing outside static analysis.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x475264": {
+    "name": "Initialize main window and reject duplicate instance",
+    "feature": "Runtime/startup",
+    "scope": "FindWindowA, running-instance message, palette-depth check, RegisterClassA/CreateWindowExA and timer.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x47631d": {
+    "name": "Turn-count UI text",
+    "feature": "Panels",
+    "scope": "Formats current/max turn string 回合数 %3d/%2d.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x478a0f": {
+    "name": "Unit condition/status description UI",
+    "feature": "UI",
+    "scope": "Normal/confusion/paralysis/poison text and window title updates.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x478f7b": {
+    "name": "Unit information tabs initialization",
+    "feature": "UI",
+    "scope": "Tabs ability/equipment/tactics/biography and dialog creation.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x47cb16": {
+    "name": "GDI framebuffer/font initialization",
+    "feature": "Rendering",
+    "scope": "宋体, CreateFontA, compatible DC/bitmap and text metrics; host Windows drawing not portable here.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x47eac4": {
+    "name": "Nonblocking Win32 message dispatch",
+    "feature": "Runtime/startup",
+    "scope": "PeekMessageA then TranslateMessage/DispatchMessageA.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x483c40": {
+    "name": "C runtime fatal-error reporting",
+    "feature": "Runtime/startup",
+    "scope": "Microsoft Visual C++ Runtime Library and Runtime Error literals; runtime version not asserted.",
+    "semantic_status": "static only",
+    "kind": "function candidate",
+    "evidence": "output/reverse-engineering/Ekd5-disassembly.txt"
+  },
+  "0x416c97": {
+    "name": "Opcode90: battle-start banner",
+    "feature": "Rendering",
+    "evidence": "tools/start_banner_probe.py; tools/tutorial_exit_probe.py; docs/CERBERUS-RE.md",
+    "scope": "Original handler unconditionally calls44bac2 in this patched edition; opcode90 runs after guide exit. Eight banner layouts and sequential script fixture.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43dde3": {
+    "name": "Selected-unit movement and action-menu controller",
+    "feature": "Player input",
+    "evidence": "tools/player_action_probe.py",
+    "scope": "1106 original menu availability/wait/cancel cases match C++ on macOS/Linux/Wasm. Includes43d538 movement, full attack-range grids/targets, modal init/callbacks, wait flags and cancellation position/facing/conditional mirror. Picker/window inputs supplied; attack/tactic/item callbacks stop.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43e273": {
+    "name": "Attack command availability predicate",
+    "feature": "Player input",
+    "evidence": "tools/player_action_probe.py",
+    "scope": "Original normal-option/manual-unit path computes attack range and checks for a target. Full grids and target order compared for53 classes; alternate option path not covered. Cerberus inferred types retained separately.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x40d9ee": {
+    "name": "Any consumable stock available",
+    "feature": "Inventory",
+    "evidence": "tools/player_action_probe.py",
+    "scope": "Scans17 stock bytes at this+0x26b for any nonzero value. All17 slots exercised with1/255. No item use/decrement or legacy save mapping claimed.",
+    "semantic_status": "observed subset",
+    "kind": "function candidate"
+  },
+  "0x43dada": {
+    "name": "Player physical attack callback",
+    "feature": "Player input",
+    "evidence": "output/reverse-engineering/cerberus/exports/caocao/Ekd5.exe/dossiers/0x43dada/decompile.c",
+    "scope": "Cerberus static dossier only. Actual player targeting/setup/completion and party result presentation remain to be verified. Existing AI arithmetic tests do not establish this caller. JEV059 reviewed investigation boundaries only.",
+    "semantic_status": "static only",
+    "kind": "function candidate"
+  }
+}

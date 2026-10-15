@@ -1,0 +1,572 @@
+0	HEX player setup
+1	Personal equipment setup
+2	Yellow Turban 1
+3	Die!
+4	Archer 2
+5	Curse you...
+6	Yellow Turban 4
+7	Ah!
+8	Strategist 1
+9	Ah...
+10	Archer 1
+11	Hah... I cannot hold on!
+12	At this rate, we will be wiped out.
+13	Infantry 1
+14	Damn! More Yellow Turbans keep coming.
+15	Cavalry reinforcements will arrive soon.
+16	We must hold our ground!
+17	Infantry 2
+18	I would rather save my own life.
+19	What imperial soldier thinks otherwise these days?
+20	This is Yingchuan, the fiercest fighting of all.
+21	The corrupt court will not send troops here to die.
+22	Perhaps, but the cavalry commander is Cao Cao.
+23	I hear he is a formidable man.
+24	Let us put our faith in him this once.
+25	All we can do now is wait.
+26	Hurry... please hurry!
+27	Imperial troop image
+28	Zhang Bao
+29	They are stubborn fighters.
+30	Zhang Liang
+31	Hmph! We will defeat them soon enough!
+32	Those imperial dogs dare attack us here!
+33	They will regret it.
+34	Zhang Bao and Zhang Liang dialogue
+35	Victory conditions
+36	1. Defeat Zhang Bao and Zhang Liang.
+37	Defeat conditions
+38	1. Cao Cao dies.
+39	2. The battle exceeds 20 turns.
+40	Hold on a little longer!
+41	Show them the imperial army is no easy prey!
+42	Liu Bei
+43	It seems we arrived in time.
+44	But they are badly outnumbered.
+45	The imperial troops are struggling.
+46	Guan Yu
+47	We should strike from both sides,
+48	though our own force is rather small...
+49	Zhang Fei
+50	Brother, you worry too much!
+51	I could handle them alone.
+52	We cannot abandon the imperial troops.
+53	Let us circle behind and strike their fort.
+54	Charge!
+55	Brothers, wait!
+56	The troops ahead will be destroyed at this rate.
+57	Let us set fires here.
+58	Yes! Draw their attention this way.
+59	It might even shake their resolve.
+60	Then I will light the fires.
+61	I do not want needless deaths on either side.
+62	Be careful how far you let them spread.
+63	Zhang Fei sets fires
+64	Light this spot too!
+65	Guan Yu sets fires
+66	No, no! The flames are too small!
+67	They will never reach the fort!
+68	Heh, heh, heh!
+69	Then how about this?
+70	Huh?
+71	Who is there!?
+72	Fire starts
+73	Recall Vermilion Bird
+74	Yellow Turban 11
+75	Fire! Fire!
+76	Yellow Turban 10
+77	The enemy is attacking from behind!
+78	What? A surprise attack!?
+79	Imperial reinforcements?
+80	Send men to deal with the rear!
+81	Damn... no one is listening!
+82	Yellow Turbans become confused
+83	What is going on!?
+84	I do not know, but we cannot worry about that now.
+85	We must deal with what is before us.
+86	The enemy is in chaos.
+87	This is our chance for victory!
+88	Our targets are Zhang Bao and Zhang Liang.
+89	Charge!
+90	Liu Bei dialogue
+91	Cao Cao
+92	I heard the imperial troops here were in trouble.
+93	But these flames...!?
+94	Cavalry 1
+95	Captain! Those men seem to have lit the fires.
+96	They do not look like imperial soldiers.
+97	Hmm. They appear to be volunteers.
+98	Go to the fort. I will speak to them.
+99	Yes, sir!
+100	Cavalry 2
+101	I am Cao Cao, courtesy name Mengde, captain of the imperial cavalry.
+102	The court has sent me against the Yellow Turbans.
+103	May I ask your name?
+104	I am Liu Bei, courtesy name Xuande. Though born a humble farmer,
+105	I could not stand by while the realm fell into chaos.
+106	I raised volunteers to fight the rebels and protect the people.
+107	Please allow my two brothers and me to aid your army.
+108	We await your orders, Lord Cao.
+109	Thanks to you, Liu Bei, the Yellow Turbans are already in disarray.
+110	There is little need for orders from me.
+111	We need only defeat the two men in the fort.
+112	Fight as you see fit. Until we meet again.
+113	Cao Cao's army arrives
+114	Defeat Zhang Bao and Zhang Liang!
+115	Tutorial
+116	Still resisting, Zhang Bao?
+117	The Han's time is over. The realm belongs to the Yellow Turbans now!
+118	You should join us!
+119	The Han may fall one day,
+120	but you will not be the ones to succeed it.
+121	Hmph!
+122	You...! There is no need to die for the Han!
+123	Your wicked sect has brought chaos to the land.
+124	I will not stand aside. Prepare to die.
+125	You must be Zhang Liang.
+126	Rebel or not, you command an army.
+127	Have the sense to surrender.
+128	Enough talk! I will kill you first!
+129	A rebel through and through.
+130	You cannot even see the situation before you.
+131	You are unfit to command. Hmph!
+132	It is a shame for a man like you to remain a mere volunteer, Liu Bei.
+133	Why not serve alongside me?
+134	War still rages in many places.
+135	Though I am grateful for your offer,
+136	we must continue fighting the rebels.
+137	I see. Then I will not press you.
+138	I have other duties as well.
+139	Farewell, until another day.
+140	He is unlike the imperial officers I have met before.
+141	Cao Cao, was it...?
+142	These troubled times are unpredictable. We may meet again.
+143	Let us deal with the remaining Yellow Turbans
+144	and make our way to Gongsun Zan's camp.
+145	We can decide our future once we arrive.
+146	Fine by me, so long as there is food!
+147	Hahahaha!
+148	(Liu Xuande...
+149	Will we next meet as friends or enemies?
+150	Only Heaven knows.)
+151	Good. That should quiet the Yellow Turbans here.
+152	(Liu Xuande... a mere volunteer,
+153	yet such a capable fighter. I must remember him.)
+154	Check Zhang Bao and Zhang Liang deaths
+155	Am I truly to die here? Ugh...
+156	Curse them... defeated by the likes of these!
+157	I wanted to halt the Yellow Turbans,
+158	but I do not yet have the strength...
+159	There is no point fighting on. Retreat.
+160	Damn it! Zhang Fei, defeated?
+161	There must be some mistake!
+162	Ugh... where are the reinforcements...?
+163	Cao Cao was defeated by the Yellow Turbans.
+164	Sun Quan army weakening
+165	Yuan Shao
+166	We now attack Sishui Pass, held by Dong Zhuo.
+167	Take it in one push, then march on Luoyang!
+168	Xiahou Dun
+169	Mengde, why give supreme command to Yuan Shao?
+170	Leading the coalition would bring great renown!
+171	This way, Yuan Shao will gladly fund the coalition.
+172	We can focus on fighting well
+173	and earn an even greater reputation.
+174	So you leave the troublesome work to Yuan Shao?
+175	You really are a clever one.
+176	But if we fail to distinguish ourselves here,
+177	it will all be for nothing.
+178	I am counting on you, Yuanrang.
+179	Leave it to me!
+180	With Xiahou Dun here, our army cannot fail!
+181	Hahaha!
+182	Sun Jian
+183	Have the supplies still not arrived?
+184	Cheng Pu
+185	No, my lord.
+186	I hear the man in charge has stopped sending food.
+187	So the enemy before us is not our only threat.
+188	This alliance may not last much longer.
+189	We must plan a way out.
+190	Pre-battle dialogue
+191	1. Defeat all enemies.
+192	Defeat all enemies!
+193	My lord, the soldiers cannot fight any longer.
+194	We should retreat.
+195	Do not lose your nerve!
+196	The enemy is right before us.
+197	One mistake could cost us our lives.
+198	Huang Gai
+199	My lord, I do not regret coming.
+200	But we have not lost to the enemy...
+201	we have lost to our own allies.
+202	Sun Jian's army becomes confused
+203	Li Su
+204	What is this? Their vanguard is faltering.
+205	This is our chance to win glory!
+206	Li Su attacks
+207	Li Jue
+208	I knew today would be auspicious.
+209	This battle is ours!
+210	Li Jue arrives
+211	Guo Si
+212	They look half-starved. They are no match for us!
+213	Defeating an army without food
+214	will be child's play!
+215	Guo Si arrives
+216	My lord, the enemy has launched a surprise attack!
+217	Stay calm and meet them!
+218	Panic will only serve the enemy!
+219	What? An ambush!?
+220	Cao Cao, go to Sun Jian's aid at once!
+221	If the vanguard is destroyed, our whole army's morale will suffer.
+222	Coalition shaken
+223	Damn! They have reached our main camp!
+224	How infuriating!
+225	If this place falls, Chancellor Dong Zhuo will have our heads!
+226	Fight to the death!
+227	Most of the enemy has been defeated...
+228	But our losses are heavy too. Should we retreat?
+229	Retreat
+230	Keep fighting
+231	General Yuan, the enemy is formidable.
+232	Fighting on will only increase our losses.
+233	Please order a withdrawal.
+234	Hmm, yes. The whole army will retreat!
+235	We have fought well enough.
+236	Withdraw at once!
+237	This is no time to retreat. Finish the remaining enemy
+238	and show them the coalition's might!
+239	I am Guan Yu, courtesy name Yunchang, Liu Bei's sworn brother.
+240	I will face you.
+241	Hua Xiong
+242	Hmph! An unknown nobody!
+243	I am Guan Yu, courtesy name Yunchang.
+244	Hua Xiong, I have come for your head!
+245	A mere volunteer dares speak so boldly?
+246	You will regret it!
+247	Come on!
+248	Hmph! Come at me if you dare!
+249	Curse you... aaagh!
+250	Guan Yu has slain the enemy general Hua Xiong!
+251	Duel resolution
+252	Ah! General Hua Xiong has been defeated!
+253	I am Hua Xiong! You rebels who oppose Chancellor Dong,
+254	I will deal with you first!
+255	If any man in the coalition does not fear death,
+256	let him taste my steel! Hahaha!
+257	That is Dong Zhuo's fierce general Hua Xiong!?
+258	Who among us dares face him?
+259	I am Guan Yu, serving under Liu Bei.
+260	Please send me, my lord.
+261	How could we send a mere volunteer?
+262	The coalition's honor is at stake!
+263	Stand down.
+264	I cannot let that remark pass.
+265	If we all seek to overthrow Dong Zhuo,
+266	what does a man's rank or regiment matter?
+267	General Guan, please calm yourself.
+268	General Yuan, consider this:
+269	if a volunteer defeats Hua Xiong,
+270	the enemy's morale will collapse.
+271	Would that not be all the better?
+272	I see. There is sense in that.
+273	Very well, General Guan. Forgive my words.
+274	You shall duel Hua Xiong.
+275	General Guan, let me offer you a cup of wine.
+276	(Hmm. He manages to please both sides.
+277	A remarkable man.
+278	I shall indulge him.)
+279	Thank you for the wine... gulp.
+280	I will slay Hua Xiong before its warmth has faded.
+281	Such courage and confidence!
+282	(I must reach Hua Xiong first. Hyah!)
+283	Why must Yuan Shao make enemies at every turn?
+284	Command like this will harm the whole army.
+285	He is not fit to lead this coalition...
+286	Ah! I never thought the coalition was so strong,
+287	or that we would fall so low!
+288	Aaah...
+289	Oh no!
+290	I forgot today's omen warned against the name Cao!
+291	Impossible! Were they not a disorganized mob?
+292	Damn! We underestimated them!
+293	Ugh... formidable indeed.
+294	Now let the regular troops prove themselves.
+295	I must withdraw!
+296	Damn it. We will retreat for now.
+297	Cao Cao, I leave the rearguard to you.
+298	I await your good news at the main camp.
+299	We have no choice. Retreat!
+300	More fighting would only waste lives.
+301	If not for that surprise attack...
+302	No, our own allies are the worst of all!
+303	What a pity!
+304	Hmph! In a fair fight,
+305	even Dong Zhuo might not beat us!
+306	Excellent! The enemy is finally defeated!
+307	Victory is ours!
+308	We survived thanks to you, Cao Cao.
+309	You have my deepest gratitude!
+310	I wish to pursue the remnants from Sishui Pass.
+311	Could you spare some provisions?
+312	We have only just ended one battle,
+313	and I never expected it to be so fierce...
+314	Then I shall share our supplies with you.
+315	You have my thanks!
+316	Please accept this in return.
+317	This is...!?
+318	We take our leave. Let us meet at the main camp.
+319	Cao Cao was defeated by Dong Zhuo's army.
+320	Lu Bu
+321	Lure the coalition deeper before attacking.
+322	No one is to advance without my command.
+323	Fan Chou
+324	My lord, can General Lu manage alone?
+325	Should we not fight as well?
+326	Dong Zhuo
+327	No man alive can defeat Fengxian.
+328	Li Ru
+329	My lord's foresight
+330	commands my deepest admiration.
+331	Zhang Ji
+332	(Hmph. What a flatterer!)
+333	Dong Zhuo army dialogue
+334	Dong Zhuo is before us. For the sake of the people,
+335	we must destroy him.
+336	Brother, first we must defeat Lu Bu.
+337	Leave him to me. I will cut him down in one stroke!
+338	He is no easy opponent, brother.
+339	But Lu Bu is indeed their leading general.
+340	If we defeat him,
+341	the coalition will have victory.
+342	Understood. Let us concentrate on Lu Bu.
+343	Hmph! I have been wanting to fight him.
+344	Then we shall take on Lu Bu first.
+345	This looks grim. Must I enter the battle myself...?
+346	Hmm!? Yuan Shao is going out?
+347	If our army cannot make its name here,
+348	what is the point of all this?
+349	Should I persuade Yuan Shao to stay where he is?
+350	Fight alongside Yuan Shao
+351	Keep Yuan Shao back
+352	(No choice.
+353	If we lose, it will all be over.)
+354	Yuan Shao, support us from the rear.
+355	Very well. Focus on the enemy before you.
+356	I will deal with any who get through.
+357	General Yuan, you must not go yourself!
+358	The commander should direct the whole army.
+359	Quite right. I leave this to you, then.
+360	Make it a fine victory!
+361	All troops, charge! Let none escape!
+362	It is time for me to attack.
+363	Who in the coalition dares face me?
+364	To cross weapons with me
+365	will be the greatest honor of your lives!
+366	Can you hear me, Dong Zhuo?
+367	You cannot even lead an army,
+368	yet call yourself Chancellor. How laughable!
+369	Come out! Stop hiding in your shell!
+370	Damn you, Cao Cao! I will crush you myself
+371	and put an end to your insolence!
+372	No, my lord! A man of your stature
+373	need not dirty his hands with rebels.
+374	True. Order the troops to bring me his head!
+375	As you command.
+376	The time has come. We attack as well.
+377	Tao Qian
+378	Let us advance too.
+379	We cannot fall behind the young men.
+380	The enemy approaches. Watch how a commander fights!
+381	Go! Intercept that unit!
+382	You are Lu Fengxian? I will face you.
+383	Hmph. You seem to have some skill.
+384	Very well. Let me teach you a lesson!
+385	I am Guan Yunchang, Liu Bei's sworn brother. Lu Bu,
+386	they say your skill is unmatched.
+387	I have come to test it.
+388	Interesting. I will not hold back. Come on!
+389	Brave indeed! But can you withstand this? Take that!
+390	Hyaaah!
+391	Hah!
+392	What! Now this is interesting!
+393	Such a worthy warrior! What a pleasure!
+394	(He truly is formidable.
+395	Lu Fengxian fights like a god or demon.)
+396	I am Zhang Fei, courtesy name Yide! Lu Bu!
+397	Fight me to the death!
+398	Such spirit! Then let us fight!
+399	Zhang Yide of Yan is here! Lu Bu,
+400	from today I shall be the strongest under Heaven!
+401	You will regret saying that so soon!
+402	He... vanished!?
+403	Hahaha! Too slow! Too slow!
+404	Ugh! You! Stand still if you dare!
+405	What!? Gone again? Impossible!
+406	Quite possible. Now die!
+407	Uooooh!
+408	Now I am angry!
+409	Truly angry!
+410	(Ugh, such strength!
+411	My arm is numb!)
+412	What is wrong, Lu Bu? This fight is not over!
+413	I have no time for this!
+414	I will play with you no longer!
+415	Do not worry. We will settle this another day!
+416	You are nothing special. Your tongue fights better than you do.
+417	What did you say!? Lu Bu!
+418	Hey! Stop! Come back!
+419	Damn that arrogant fool!
+420	All talk, and now he runs!
+421	You are a warrior renowned throughout the realm,
+422	yet serve a man like Dong Zhuo.
+423	Have you no shame?
+424	As a warrior, I do not question my master.
+425	I seek only a stage on which to fight!
+426	That is the difference between us, Liu Bei.
+427	...(A warrior is still a man,
+428	but this one knows nothing of righteousness.)
+429	Are you finished? Then let us settle this!
+430	Lu Bu, with such ability,
+431	why not do some good for the people?
+432	Enough, Liu Bei!
+433	A warrior proves his worth only in battle.
+434	Then we have no choice but to fight!
+435	Yes! Come on!
+436	Damn it!
+437	Hah... hah...
+438	(Hmm! He is stronger than I expected!
+439	I must not underestimate him.)
+440	Come, Lu Bu! Let us exchange a few more blows!
+441	Liu Bei, I have seen your skill.
+442	We will finish this another time.
+443	He relies on nothing but his own strength...
+444	Damn... to think I could be defeated...
+445	Retreat! Retreat!
+446	What? Lu Bu has fled?
+447	Is the coalition that strong!?
+448	There is nothing else for it now.
+449	We must hold Hulao Pass until they give up.
+450	The enemy outside the walls is defeated!
+451	The coalition overcame Dong Zhuo,
+452	but he held fast inside Hulao Pass.
+453	Unable to take the pass at once,
+454	the coalition withdrew to prepare another assault.
+455	Damn those coalition scum!
+456	I will have revenge!
+457	Withdraw! Withdraw!
+458	This is hopeless. I must escape!
+459	How... how could this be...?
+460	Aaagh!
+461	Is this the price of choosing the wrong master?
+462	Ugh...
+463	Damn it! Dong Zhuo was almost within reach!
+464	I cannot die here. Retreat!
+465	Just wait! I will avenge this one day!
+466	Dong Zhuo was right before us... how bitter!
+467	Retreat!
+468	I cannot afford to die.
+469	Regrettable, but I must return to the main camp.
+470	Cao Cao, I leave the rest to you.
+471	Hmm, what a pity...
+472	Ten years younger, and I would not have lost!
+473	The coalition defeated Dong Zhuo's army, but he held
+474	Hulao Pass. Unable to take it at once,
+475	they withdrew to prepare another assault.
+476	Cao Cao was defeated by Dong Zhuo.
+477	After him! Do not let Dong Zhuo escape!
+478	Hmph. They never give up.
+479	Li Ru, find a way to hold them off!
+480	I have been eager to face them.
+481	I shall defeat them without fail.
+482	Good. I leave this to you.
+483	Yes! Leave everything to me.
+484	Proceed to Chang'an without concern, my lord.
+485	Dong Zhuo escapes
+486	1. Defeat Li Ru.
+487	Defeat Li Ru!
+488	Li Ru, shall we sortie?
+489	The time is right. The Chancellor is far away now.
+490	Let us strike before withdrawing.
+491	This time I will take Cao Cao's head!
+492	Li Ru, catch any stragglers here.
+493	Leave it to me.
+494	Good. Attack!
+495	Our army has reached its limit!
+496	Should we retreat...?
+497	Retreat immediately
+498	Continue the pursuit
+499	All troops, withdraw at once! (So close...
+500	We almost caught Dong Zhuo...
+501	What a pity.)
+502	1. Cao Cao reaches the west edge.
+503	2. Defeat Li Ru.
+504	Cao Cao must escape to the west edge!
+505	Trying to run? Do not struggle in vain.
+506	Generals, attack!
+507	Now it is our turn to pursue.
+508	Cao Cao, I will not let you escape!
+509	How could we withdraw now?
+510	We chose to pursue him. We must see it through.
+511	But something is strange...
+512	Why are there so few enemy troops?
+513	Hahaha! Cao Cao is still a novice.
+514	Before my schemes, he is as witless as a pig.
+515	Generals, put in a little effort.
+516	The quickest of you will claim his head!
+517	Today's divination foretold good fortune in the woods.
+518	It seems it was right! Hahaha!
+519	Cao Cao, let my blade tell your fortune!
+520	All troops, advance!
+521	Xu Rong
+522	Hmph. Li Ru's plan is sound,
+523	but I have no wish to keep hiding.
+524	Let me cut them down!
+525	Cao Cao, never advance deep without support.
+526	Greed for glory never ends well.
+527	Now where will you run?
+528	Oh no!
+529	We have fallen into an ambush!
+530	Now they have us from both sides!
+531	All troops, retreat at once! (So close...
+532	Even retreat will be difficult now.
+533	Our only choice is to strike Li Ru.
+534	Damn it! We cannot avoid them!
+535	All troops, charge!
+536	Well done, Cao Cao. You saw through my plan.
+537	Then I must fight you with all I have.
+538	Curse that Xu Rong. His luck is truly terrible.
+539	Very well. Advance and pursue Cao Cao!
+540	Impressive! You discovered my ambush.
+541	But you will not leave until you defeat me!
+542	An ambush, just as I feared!
+543	This will be a difficult battle...
+544	What? We were discovered...?
+545	The divination was wrong again!
+546	Very well. All troops, attack!
+547	Well done, Cao Cao. You saw through my plan.
+548	Good! At last we can attack!
+549	I will cut them all down! Charge!
+550	Cao Cao, today you die!
+551	We will join the attack and crush Cao Cao!
+552	Attack!
+553	Hah... we finally escaped.
+554	Li Ru, prepare yourself!
+555	To fight your way here is impressive indeed.
+556	But we have already won this battle.
+557	You will never catch Chancellor Dong Zhuo now.
+558	I shall go to Chang'an as well.
+559	Cao Cao! We shall meet again!
+560	Oh no... ugh!
+561	That hurts! Damn it, retreat!
+562	Next time I will consult a diviner before fighting!
+563	Impressive! But the Chancellor is far away now.
+564	You can no longer catch him.
+565	I should not linger here either.
+566	What a shame, Cao Cao. I shall take my leave!
+567	Cao Cao defeated Dong Zhuo!
+568	But Cao Cao's army also suffered heavy losses
+569	and had to abandon the pursuit.
+570	Excellent! The enemy is defeated at last!
+571	Victory belongs to our army!

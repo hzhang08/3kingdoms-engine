@@ -1,0 +1,5 @@
+BETTER_AUTH_SECRET=generate-a-local-only-random-secret-at-least-32-characters
+GOOGLE_CLIENT_ID=your-dedicated-web-client
+GOOGLE_CLIENT_SECRET=your-dedicated-web-secret
+# Optional locally. In production install with Wrangler secret bulk.
+JEV_API_KEY=

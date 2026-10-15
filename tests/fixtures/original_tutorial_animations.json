@@ -1,0 +1,7695 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "routine": "0x45778f",
+  "tick_ms": 50,
+  "boundaries": {
+    "camera": "request captured; scrolling and viewport configuration not emulated",
+    "archive": "read-only LS12 decoder supplies original indexed sprite bytes",
+    "drawing": "indexed pixels captured before Win32 composition; background painting omitted",
+    "sound": "original sound IDs and flags captured; audio output omitted",
+    "wait": "original tick counts captured; message pumping omitted",
+    "copy": "byte copy hook; horizontal mirroring executes original machine code"
+  },
+  "cases": [
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        }
+      ]
+    },
+    {
+      "unit": 474,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 6,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 288,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 37,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        }
+      ]
+    },
+    {
+      "unit": 235,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 7,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 336,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 23,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c92aa662b5af8157b1d7a549a12d527706d1d83578e9182f67d1865ea3ac6330"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c92aa662b5af8157b1d7a549a12d527706d1d83578e9182f67d1865ea3ac6330"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c92aa662b5af8157b1d7a549a12d527706d1d83578e9182f67d1865ea3ac6330"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c92aa662b5af8157b1d7a549a12d527706d1d83578e9182f67d1865ea3ac6330"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e9ec7b8b17e2755df4f62cc5db9a0c1da743783e8009767263fb35021ba1ce4d"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e9ec7b8b17e2755df4f62cc5db9a0c1da743783e8009767263fb35021ba1ce4d"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e9ec7b8b17e2755df4f62cc5db9a0c1da743783e8009767263fb35021ba1ce4d"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e9ec7b8b17e2755df4f62cc5db9a0c1da743783e8009767263fb35021ba1ce4d"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "80975d8fd13eefd984a17134923ba2d947b7e286c50f2c38d2bbf4dd50227cf2"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "80975d8fd13eefd984a17134923ba2d947b7e286c50f2c38d2bbf4dd50227cf2"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "80975d8fd13eefd984a17134923ba2d947b7e286c50f2c38d2bbf4dd50227cf2"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "80975d8fd13eefd984a17134923ba2d947b7e286c50f2c38d2bbf4dd50227cf2"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8da7b724961c050c1c0a41d2159022fdb3db071739d4e9bfdf98df8a21e6b980"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "af01179ba8a507017a678966bbdcd72729241b7522d962fd23b0fd1af324e6ce"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "af01179ba8a507017a678966bbdcd72729241b7522d962fd23b0fd1af324e6ce"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "af01179ba8a507017a678966bbdcd72729241b7522d962fd23b0fd1af324e6ce"
+        }
+      ]
+    },
+    {
+      "unit": 334,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 16
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 824,
+          "width": 48,
+          "height": 48,
+          "slot": 24,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 64,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "af01179ba8a507017a678966bbdcd72729241b7522d962fd23b0fd1af324e6ce"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5d46a42ec65645a1df69a68b59b626856b9e732d4d816690c87af781c6676ae3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "aea43dd3c94998ff5c15ea257f75270c917cc2f7f4178db1ad8f67350748af85"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "79f129b57d2e2cb05dc68db10c7cbd9abe5b37db33b1a653ed6203d2389963f7"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "8c5358f2e454bc5c65d7d866c952597103cf9dddc7c926547cfecaedaf22fbe8"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        }
+      ]
+    },
+    {
+      "unit": 477,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 15
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 776,
+          "width": 48,
+          "height": 48,
+          "slot": 40,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 102,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5a6c27aef23aa9a5d6dfa25ea764caec7fe746a4680a95207aaf6a8d9bd41a79"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e0cef88fe5ed699b334bf5248db8aab23065d7741a2eed969011bcafcfdf2604"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "7c02680c609f224143e7563c87f202932be17bee60df912cb29e0fa34ad67045"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "6df167a2b202825167234cb08e08131bea8e7f785c0f390a2a960b0a17d04fab"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "e1ec714bb12e6e11dd35b65e19878d0eb7e3201f42b4cfcbad6d1e32a738cb1c"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        }
+      ]
+    },
+    {
+      "unit": 234,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 12,
+          "y": 17
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 576,
+          "y": 872,
+          "width": 48,
+          "height": 48,
+          "slot": 20,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 19,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "51ccab8123a483bdeea31610c1ce17ba75aa0a419473949663d3556fa6a95a52"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c7824151d69c09cbaebf6b908631d0898ccb2d437349c16ae07febff467740ca"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c7824151d69c09cbaebf6b908631d0898ccb2d437349c16ae07febff467740ca"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c7824151d69c09cbaebf6b908631d0898ccb2d437349c16ae07febff467740ca"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 0,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 1,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "c7824151d69c09cbaebf6b908631d0898ccb2d437349c16ae07febff467740ca"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e5881f4b68072bd1c674d2632435ae7e5f21a7ddb853bdd4865982e2bb7dee75"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e5881f4b68072bd1c674d2632435ae7e5f21a7ddb853bdd4865982e2bb7dee75"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e5881f4b68072bd1c674d2632435ae7e5f21a7ddb853bdd4865982e2bb7dee75"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 1,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": true
+            }
+          ],
+          "pixels_sha256": "e5881f4b68072bd1c674d2632435ae7e5f21a7ddb853bdd4865982e2bb7dee75"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5006eb5312ac24e9882ff7a86cd8b981f7b442bf8c8e17531367e8a784b0f5d3"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5006eb5312ac24e9882ff7a86cd8b981f7b442bf8c8e17531367e8a784b0f5d3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5006eb5312ac24e9882ff7a86cd8b981f7b442bf8c8e17531367e8a784b0f5d3"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 2,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 0,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "5006eb5312ac24e9882ff7a86cd8b981f7b442bf8c8e17531367e8a784b0f5d3"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 1,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 1,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 4,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "03f3b350a04f94dfbe8572d9b1ad55677d340cc73b0db8651031d4dfe6de25cc"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "9cc22eae050d825a634a8d98fd6d16f58141e4fb9dfec755e2d46a18af4646bd"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 2,
+      "pre": 0,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "9cc22eae050d825a634a8d98fd6d16f58141e4fb9dfec755e2d46a18af4646bd"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 0,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "9cc22eae050d825a634a8d98fd6d16f58141e4fb9dfec755e2d46a18af4646bd"
+        }
+      ]
+    },
+    {
+      "unit": 147,
+      "direction": 3,
+      "animation": 2,
+      "pre": 1,
+      "post": 1,
+      "events": [
+        {
+          "kind": "camera_request",
+          "x": 10,
+          "y": 11
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        },
+        {
+          "kind": "sound",
+          "id": 8,
+          "flag": 1
+        },
+        {
+          "kind": "frame",
+          "x": 480,
+          "y": 584,
+          "width": 48,
+          "height": 48,
+          "slot": 36,
+          "archive": "UNIT_SPC.E5",
+          "sprite": 83,
+          "matches": [
+            {
+              "frame": 2,
+              "mirror": false
+            }
+          ],
+          "pixels_sha256": "9cc22eae050d825a634a8d98fd6d16f58141e4fb9dfec755e2d46a18af4646bd"
+        },
+        {
+          "kind": "wait",
+          "ticks": 8
+        }
+      ]
+    }
+  ]
+}

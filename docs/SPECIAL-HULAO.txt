@@ -1,0 +1,381 @@
+Hulao Pass — opponent-specific starting supplies
+Special Mac app 2.8.1 / web 0.19.1-web-special-dong-no-beans
+Released 2026-10-13 (America/Los_Angeles)
+
+New 董卓 matches start with zero 恢复用豆 (two friendly units).
+New 吕布 matches retain three shared 恢复用豆 (four friendly units).
+Existing saves keep their inventory and lineup.
+
+Refresh https://3kingdoms.cc.cd/special/hulao/ and select 重新开始 → 选择武将.
+Mac: save and close your older app, then reopen
+  dist/special-hulao-macos/Start Hulao.command
+Archive: dist/special-hulao-macos-2.8.1.zip
+New schema19 Dong saves require this version; older saves remain supported.
+Evidence: docs/evidence/special-hulao-dong-no-beans/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — two/four friendly teams
+Special Mac app 2.8.0 / web 0.19.0-web-special-two-four
+Released 2026-10-13 (America/Los_Angeles)
+
+Against 董卓: chosen hero + one random distinct teammate (2 friendlies).
+Against 吕布: chosen hero + all three other heroes (4 friendlies).
+Choose 曹操, 夏侯渊, 夏侯惇, or 李典. Three shared 恢复用豆 per new match.
+Defeat only when all friendly units fall or the 20-turn limit expires.
+Existing saves retain their own lineup. Leaderboard history is preserved.
+
+Refresh https://3kingdoms.cc.cd/special/hulao/ and select 重新开始 → 选择武将.
+Mac: save and close your older app, then reopen
+  dist/special-hulao-macos/Start Hulao.command
+Archive: dist/special-hulao-macos-2.8.0.zip
+New schema18 saves need this version. Older saves stay supported.
+Evidence: docs/evidence/special-hulao-two-four/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — camp tents aligned with healing cells
+Special Mac app 2.7.2 / web 0.18.2-web-special-aligned-camps
+Released 2026-10-13 (America/Los_Angeles)
+
+The rendered tents now occupy the actual 兵营 healing squares. Click the tent
+or its square to move there; the roof also maps to the same tile. The two old
+offset background tents are removed. Camp labels and outlines share the terrain
+coordinates. Recovery remains 20% max HP at your next turn.
+
+Refresh the web game and resume. Mac: save, close the older app, then reopen
+  dist/special-hulao-macos/Start Hulao.command
+Archive: dist/special-hulao-macos-2.7.2.zip
+Existing saves and leaderboard match identities stay compatible.
+Evidence and asset build notes: docs/evidence/special-hulao-camp-alignment/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — clearer camp tiles and HP recovery
+Special Mac app 2.7.1 / web 0.18.1-web-special-camp-feedback
+Released 2026-10-13 (America/Los_Angeles)
+
+Stand on a GREEN 兵营 / Camp +20% square until your next turn. A wounded unit
+recovers 20% of maximum HP (rounded down, capped at full HP). Arrival does not
+heal immediately. The backdrop tents are not exact logical tile markers.
+Recovery now shows a longer green +HP number and before/after HP caption.
+
+Refresh the web game and resume; existing saves remain compatible. Mac users
+can save, close the running older app, then reopen Start Hulao.command.
+No gameplay rules, supplies, random state or leaderboard data changed.
+Evidence: docs/evidence/special-hulao-camp-recovery/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — three starter Healing Beans in every new special battle
+Special Mac app 2.7 / web 0.18.0-web-special-starting-beans
+Released 2026-10-13 (America/Los_Angeles)
+
+Every NEW special battle starts with 恢复用豆 x3 in shared team inventory,
+against either Lu Bu or Dong Zhuo. Open 道具, choose 恢复用豆 and its target.
+Each bean restores up to 30 HP and consumes one item. Saving/resuming preserves
+remaining inventory; existing saves are not refilled. Restart grants three.
+
+Refresh https://3kingdoms.cc.cd/special/hulao/ and start a new battle.
+Mac: save and close the older app, then reopen
+  dist/special-hulao-macos/Start Hulao.command
+Archive: dist/special-hulao-macos-2.7.zip
+New supplied saves use schema17 and require this release. Earlier saves remain
+supported. Login, lineup rules and leaderboard ranking are unchanged.
+Evidence: docs/evidence/special-hulao-starting-beans/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — three friendly heroes against Lu Bu
+Special Mac app 2.6 / web 0.17.0-web-special-three-friendlies
+Released 2026-10-13 (America/Los_Angeles)
+
+NEW MATCHES
+Against Lu Bu: your selected hero plus TWO distinct random allies from the other
+three selectable heroes. Every possible pair is equally likely. All three are
+player-controlled. Your hero starts at (10,10), allies at (10,12) and (10,8).
+Opponent remains a 50/50 draw between Lu Bu and Dong Zhuo. Dong Zhuo remains 1v1.
+Defeat requires all friendly heroes to fall, or the existing 20-turn timeout.
+Automatic end turn waits for every surviving friendly to finish its action.
+
+SAVES AND LEADERBOARD
+Three-friendly matches use schema16 / prototype-0.16-duel / hulao-duel-trio-v1.
+Older saves keep their exact lineup; no extra unit is inserted during a load.
+Use Restart > Choose hero to get a new three-friendly match against Lu Bu.
+The leaderboard stores both allies, accepts old matches, and still counts each
+finished match once. Existing wins/losses are retained. Ranking rules are unchanged.
+New schema16 saves require this release; keep an export before rolling back.
+
+PLAY
+https://3kingdoms.cc.cd/special/hulao/
+Refresh the browser before starting a new battle.
+Mac: dist/special-hulao-macos/Start Hulao.command
+Save, close the older running app, then reopen version 2.6.
+Evidence: docs/evidence/special-hulao-three-friendlies/REPORT.txt
+
+PREVIOUS RELEASE NOTES
+
+Hulao Pass — Google sign-in and special-battle leaderboard
+Web 0.16.0-web-special-account-leaderboard; Mac app remains 2.5
+Released 2026-10-13 (America/Los_Angeles)
+
+PLAY
+https://3kingdoms.cc.cd/special/hulao/
+Refresh to get the update. Google sign-in and a username are now required.
+Existing campaign accounts work here. Open 英雄榜 / Leaderboard in the toolbar.
+
+RANKING
+Players with at least one win rank first, by total wins descending ONLY.
+Players with no wins follow, by total losses descending.
+Equal scores share a rank. Losses do not break ties between winning players.
+Each completed registered match counts once; reloading an earlier save of that
+same match does not create another result. Unfinished/restarted matches do not
+count as losses. Public entries contain username, rank, wins and losses only.
+
+SAVES AND RESULTS
+Special saves are local to this browser and separated by signed-in account.
+Completed results persist in Cloudflare D1 with the account. A failed result
+submission is retained locally and retried when connected. A new ranked match
+must register online before gameplay begins.
+Previous anonymous saves remain available from Saves > Previous local saves
+(unranked); the original slots are preserved. Imported raw backups are also
+unranked. Export before changing devices. Results are cloud-backed; special
+battle snapshots are not cloud saves.
+
+SCOPE
+This is a casual leaderboard: the server verifies ownership, an allowlisted
+starting state, terminal-state constraints and one result per match. It does
+not replay every command server-side, so it is not an authoritative anti-cheat
+system. No native app, game rules, campaign save format or JEV secrets changed.
+Details and limitations: docs/evidence/special-hulao-leaderboard/REPORT.txt
+
+PREVIOUS RELEASE — gameplay and native-app details remain applicable
+
+Hulao Pass — survive until all friendly units fall
+Special Mac app 2.5 / web 0.15.0-web-special-team-survival
+
+NEW DEFEAT RULE
+In the two-friendly-unit match against Lu Bu, either friendly can fall first.
+The survivor can still move, attack, use items and win by defeating Lu Bu.
+Unit-loss defeat occurs only after BOTH friendly units fall. The 20-turn limit
+still applies. The Dong Zhuo one-on-one and regular campaign rules are unchanged.
+The objective and defeat text now describe the entire friendly team (ZH/EN).
+
+SAVES
+New team matches use schema15 / prototype-0.15-duel / hulao-duel-team-v1.
+Unfinished schema14 matches are validated with their original rules and then
+upgraded in memory. Lineup, actions, pending movement, turn, inventory and RNG
+stay unchanged. A manual slot is not overwritten merely by loading it.
+Previously completed defeats remain ended: restart or load an earlier save.
+Existing one-on-one saves retain schema13 and their exact original lineup.
+Version 2.4 and earlier cannot read schema15; export a backup before rollback.
+
+PLAY
+https://3kingdoms.cc.cd/special/hulao/
+Save, refresh the page, and resume or start a new battle.
+Mac: dist/special-hulao-macos/Start Hulao.command
+Save and close an older running app, then open version 2.5.
+Detailed tests and release evidence: docs/evidence/special-hulao-team-survival/REPORT.txt
+
+HISTORICAL 2.4 REPORT (defeat rule superseded above)
+
+Hulao Pass — Lu Bu random ally update
+Special Mac app 2.4 / web 0.14.0-web-special-lubu-ally
+
+NEW BATTLES
+Choose Cao Cao, Xiahou Yuan, Xiahou Dun or Li Dian as before. Opponent remains
+an independent 50/50 draw between Lu Bu and Dong Zhuo.
+Against Lu Bu, one of the other three heroes is selected uniformly and joins
+our side under player control. Your hero starts at (10,10), the extra ally at
+(10,12), Lu Bu at (13,10). All three use existing voxel animations and Henry's
+stats, class and equipment. Against Dong Zhuo, the match remains one-on-one.
+Both friendly units can move and act. Web auto-end waits until both have acted.
+The selected hero remains the commander: that hero's death or exceeding 20 turns
+still loses the battle; losing only the extra ally does not end it.
+
+SAVES
+Existing saves retain their original lineup, including old one-on-one Lu Bu
+matches. Start a NEW battle to get the extra ally. Loading never rerolls units.
+New two-player-unit saves use schema14 / prototype-0.14-duel with an explicit
+validated duel_ally ID. Dong Zhuo and historical matches retain schema13.
+The extra ally, pending action, HP/equipment, events and combat RNG survive load.
+Old apps cannot read schema14. Keep an export before rolling back the app.
+Save directories and the separate four-battle campaign are unchanged.
+
+DIAGNOSTICS
+The previous release's local opponent-selection history now also records the
+ally and independent ally draw. No combat RNG, API, database or JEV change.
+The earlier repeated-Lu-Bu-after-defeat report remains unresolved; this feature
+is not presented as a fix for that report.
+
+PLAY
+https://3kingdoms.cc.cd/special/hulao/
+Refresh, then 重新开始 > 选择武将. Existing autosaves keep their lineup.
+Mac: dist/special-hulao-macos/Start Hulao.command
+Detailed evidence: docs/evidence/special-hulao-ally/REPORT.txt
+
+HISTORICAL 2.3 SPECIFICATION AND RELEASE EVIDENCE (superseded above)
+
+Hulao Pass — selectable hero voxel duel
+Released 2026-10-13; special Mac app 2.3 / web 0.13.0-web-special-duel-heroes
+
+PLAY
+https://3kingdoms.cc.cd/special/hulao/
+Mac: dist/special-hulao-macos/Start Hulao.command
+     dist/special-hulao-macos/虎牢关·体素特别版.app
+Save and close an older running special app, then reopen this version.
+Browser automatically resumes an existing duel. Use 重新开始 > 选择武将 for the
+new chooser. Native starts at the chooser; F9 loads the current slot, F6 lists slots.
+
+NEW MATCH
+Click a card (touch supported) or press 1–4:
+1 Cao Cao / 曹操 (id0): commander, level3, HP112.
+2 Xiahou Yuan / 夏侯渊 (id6): mounted archer, level3, HP115; bow attacks.
+3 Xiahou Dun / 夏侯惇 (id1): cavalry, level4, HP121.
+4 Li Dian / 李典 (id11): infantry, level3, HP126.
+Opponent: Lu Bu / 吕布 (id119), level7, HP146, or Dong Zhuo / 董卓 (id127),
+level5, HP134. Each has 50% probability. Draw once at new-match selection using
+host entropy (browser crypto.getRandomValues / native std::random_device).
+Combat RNG is not consumed by this draw. Saves retain both identities and RNG;
+loading, opening the chooser or language changes never reroll an existing match.
+
+One selected player at (10,10), one enemy at (13,10). All other37 source records
+remain withdrawn; they cannot act, reinforce or appear in unit inspection.
+Henry's source stats, class, HP/MP, experience and equipment are retained.
+Defeat the chosen enemy within 20 turns; defeat tracks the chosen player, even
+when Cao Cao is a healthy withdrawn record. This is a custom duel, without full
+army events or campaign rewards, not a balanced tournament mode. Lu Bu is stronger.
+The straightforward automated attack policy won Cao Cao/Dong Zhuo and Xiahou
+Dun/Dong Zhuo but lost the other six matchups; that is not proof those are unwinnable.
+
+SPRITES
+Four new libraries: output/character-art/{xiahouyuan,xiahoudun,lidian,lubu}-voxel-sprites/
+Combined gallery: output/character-art/hulao-duel-heroes/index.html
+Each has 28 unique transparent512px frames (11 movement,12 attack,5 special),
+256px copies, group/combined atlases, labeled PNG,60 GIF/WebP preview pairs,
+interactive gallery, package config, source hashes, native timing and a ZIP.
+Six integrated libraries total168 frames, including existing Cao Cao/Dong Zhuo.
+Runtime animation packets use original character sprite IDs and existing timing;
+feet are anchored to map cells during movement/attacks/reactions.
+Built-in imagegen generated/edited the new artwork:16 calls total (4,2,6,4).
+Prompts and source paths are retained in each generation-prompts.json; packaging
+uses fixed crops and uniform scale. No JEV calls. These are voxel-style 2D sprites,
+not rigged 3D meshes. Small generated pose/scale variations remain possible.
+
+CONTROLS AND GATE
+Select the player, click a blue tile to move, then choose an action. Click the
+current tile again or press Space to act without moving. Only legal attack-range
+targets work. Bow range/movement use the selected character's existing rules.
+Right-click or Control-click for details; mobile long-press and pinch/pan remain.
+E ends turn, Esc cancels movement. R reopens the chooser; Esc returns to an existing
+match. Saves and battlefield commands are blocked while choosing; load is allowed.
+Blue72x48 projected movement tiles use the prior camera and inverse picking.
+The east gate at (6,9)/(6,10) remains open (type16) for this custom duel only;
+walls/cliffs remain blocked. See special-hulao-gate/reference.json for source evidence.
+The illustrated gatehouse has no 3D occlusion or gate-opening animation.
+
+SAVES AND ISOLATION
+New schema13 / prototype-0.13-duel, layout hulao-duel-heroes-v1,
+map hulao-open-east-gate-v1, exact current asset-manifest hash and explicit
+validated duel_hero/duel_enemy. Wrong IDs, third deployed units, wrong map/manifest,
+wrong scenario or corrupted checksums are rejected atomically.
+Historical schema11/12 Cao Cao/Dong Zhuo saves with the specifically whitelisted
+old manifest validate first, then upgrade without resetting units, positions,
+RNG, inventory, outcome or pending movement. Gate migration clears only obsolete
+cached enemy plans where required. Raw core historical serialization remains stable.
+Manual slots are not overwritten by loading. Browser autosave upgrades on its next
+save. New snapshots require this release. No full-army special-save migration.
+Native: ~/.local/share/caocao-prototype/special-hulao-duel-v1
+Browser IndexedDB: caocao-special-hulao-duel-v1
+Ten manual slots plus browser autosave, snapshot export/import. Save rows identify
+both combatants. An unreadable autosave is retained under a recovery key with an
+Export original backup button before a new match can overwrite slot0.
+No login, leaderboard, cloud saves, API/JEV calls in this special mode.
+Original game, Henry's source seed, campaign app/saves, cloud database, secrets,
+OAuth and DNS configuration are unchanged.
+
+VERIFICATION
+Evidence: docs/evidence/special-hulao-heroes/
+- All eight matchups: correct two-unit roster, source statistics/equipment,
+  movement/attacks, chosen-unit defeat, victory/turn limit and RNG save continuation.
+  Native and Node/WebAssembly reports are identical (native.json / wasm.json).
+- Save/reload before every action yields identical continuation; invalid IDs and
+  corrupted saves are rejected. Historical schema11 hash is preserved; genuine
+  schema12 fixture migrates, retaining pending actions and gate access.
+- Native SDL and actual signed packaged Mac app: all four chooser cards, keyboard
+  routing, paused chooser, F5/F9 restore, pair-only inspection, all eight matchups'
+  walks, player attacks and enemy attacks render. Existing gate, targeting, move
+  cancellation and post-move menus pass. Package ran from /tmp with bundled assets
+  and isolated saves. See native-render and packaged-render reports/screenshots.
+- Four regular scenario regression reports and three campaign transitions remain
+  identical to the previous release. All24 web tests and TypeScript checks pass.
+- Local Chrome: mouse-selected Xiahou Yuan/Dong Zhuo; keyboard-selected Li Dian/Lu
+  Bu; manual slot1 restores the earlier pairing; page reload retains the exact
+  saved hash. Loading from chooser works; no initial autosave before selection.
+- Chrome CDP-emulated390x844 touch: Xiahou Dun/Lu Bu selection works; pinch preserves
+  battle hash; Chinese/English chooser screenshots. Corrupt autosave is rejected,
+  manual slot survives, and its retained original backup downloads with its exact
+  test corruption intact. Automation's download-event wait timed out, but the
+  downloaded file was verified directly. Test data is confined to localhost.
+- Live Chrome loads engine e30cd25bd946f35d, resumes the existing turn5 victory
+  Cao Cao/Dong Zhuo save using schema13. Previewing/cancelling chooser retains
+  hash8d9c2e50a5e9698de02a303aa0e04ef16a4e9100f9d1b84b48ca5578b46c1012.
+  No /api calls or console errors. Existing Emscripten timer-vs-RAF performance
+  warning and unrelated browser-extension warnings recorded in browser-live.json.
+- Safari, physical phones/tablets and Linux were not rerun for this release.
+  Native Mac and WebAssembly are tested; this does not establish full-campaign
+  equivalence. Native background music remains an earlier limitation; browser
+  track3 and existing sound effects remain available.
+
+SOURCE IDENTITY
+Henry seed: 8d2b85cf52c023ce1972dad6cc3405de7f583baaf6abd00cd1502d665d5d838a
+Current special manifest: 40c6b3cb9624396c03f793298827bddac6c5ddae2a0e26199f7e72184cafc89e
+Whitelisted old duel manifest: a31262e53727bc447f0c2bb9edebd9d13c3b205253b994c09d2ab00176fa7c4b
+Original Ekd5.exe: 199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0
+
+RELEASE AND ROLLBACK
+Live Cloudflare: 52152a1d-8756-493e-b171-2522cbebc365
+Previous retained: c1f86dd6-7de7-491e-af63-f8b789a05516
+Previous Mac backup: dist/special-hulao-macos-2.2.zip
+Older2.1/2.0/1.1 backups retained. Previous report: special-hulao-heroes/previous-release.txt.
+Rollback versions cannot read schema13 saves; export before changing versions.
+Browser assets:30 files, seven data chunks,128351766 data bytes (~122MiB).
+Mac app ad-hoc signed for this machine; not notarized for public Mac distribution.
+
+REPRODUCE
+For each new character slug:
+.venv/bin/python tools/package_voxel_character.py output/character-art/SLUG-voxel-sprites
+.venv/bin/python scripts/stage-special-hulao.py
+.venv/bin/python scripts/stage-prototype-assets.py
+cmake --build build-mac --target caocao_prototype_app special_hulao_tests -j4
+build-mac/special_hulao_tests assets/prototype
+.venv/bin/python scripts/package-special-hulao.py
+export PATH="$PWD/.venv/bin:/opt/homebrew/bin:$PATH"
+source .cache/emsdk/emsdk_env.sh
+cmake --build build-web --target caocao_prototype_app special_hulao_tests -j4
+.cache/emsdk/node/24.19.0_64bit/bin/node build-web/special_hulao_tests.js assets/prototype
+cd web-game
+npm run typecheck
+npm test
+npm run build
+node node_modules/wrangler/bin/wrangler.js deploy
+
+OPPONENT RANDOMNESS FOLLOW-UP (2026-10-13)
+Reported always encountering Lu Bu after new selections. Could not reproduce:
+20 fresh browser starts selected Dong Zhuo13 / Lu Bu7; all20 captured random
+values mapped correctly through the compiled WebAssembly selection path. The
+actual packaged Mac chooser selected Dong Zhuo3 / Lu Bu1 in four starts.
+Published engine ID and JavaScript match the tested build. Each draw remains
+independent50/50; repeats are allowed. No algorithm, save or deployment change.
+The user's exact sequence/platform was not captured, so a random streak remains
+a hypothesis. Evidence: docs/evidence/special-hulao-random/verification.json.
+
+DEFEAT-RESTART FOLLOW-UP (2026-10-13)
+Desktop web report remains unresolved: the always-Lu-Bu result was not reproduced
+after actual defeat. Added explicit native/Wasm post-defeat reset checks for all
+eight matchups, and a local-only opponent diagnostic history/export in web 0.13.1.
+Website and canvas restart routes honor both entropy branches; six real-random
+Xiahou Yuan post-defeat website restarts yielded four Lu Bu and two Dong Zhuo.
+This is a diagnostic release, not a confirmed fix. Selection stays independent
+50/50. Refresh to activate; 存档 -> 导出对局诊断 captures future selections/restores.
+See docs/evidence/special-hulao-defeat-restart/REPORT.txt for limits and evidence.

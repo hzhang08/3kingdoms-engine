@@ -1,0 +1,14 @@
+{
+  "name": "caocao-web-game", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1 --port 8787 --persist-to .wrangler/state",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.client.json --noEmit",
+    "build": "node scripts/build.mjs",
+    "test": "tsx --test tests/*.test.ts",
+    "db:local": "wrangler d1 migrations apply caocao-game --local --persist-to .wrangler/state",
+    "db:remote": "wrangler d1 migrations apply caocao-game --remote",
+    "deploy": "npm run typecheck && npm run build && wrangler deploy"
+  },
+  "dependencies": { "better-auth": "1.6.25" },
+  "devDependencies": { "@cloudflare/workers-types": "4.20260515.1", "@types/node": "22.19.19", "esbuild": "0.25.12", "tsx": "4.20.6", "typescript": "5.9.3", "wrangler": "4.92.0" }
+}

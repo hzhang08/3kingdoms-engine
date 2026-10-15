@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>三国志曹操传 · 开场研究原型</title>
+<style>
+@font-face{font-family:Song;src:url('CaoCaoSong.ttf')}*{box-sizing:border-box}body{margin:0;background:#171719;color:#eee7d8;font-family:Song,serif}main{max-width:1040px;margin:auto;padding:22px}header{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}h1{font-size:24px;margin:0}p{line-height:1.7}small,.muted{color:#b9ae9d}canvas{width:100%;height:auto;display:block;background:#111;aspect-ratio:640/440;outline:none;border:1px solid #544934}button,select{font:inherit;background:#342e27;color:#f6ead1;border:1px solid #746246;padding:9px 14px;border-radius:4px;cursor:pointer}button:hover{background:#514433}button:disabled{opacity:.4;cursor:wait}nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}#message{min-height:1.7em;color:#efc886}details{border-top:1px solid #484037;padding-top:12px}code{font-family:monospace;overflow-wrap:anywhere}#status{white-space:pre-wrap;font-size:12px;color:#aaa}a{color:#e8c488}.notice{padding:12px 16px;background:#302822;border-left:3px solid #aa8244}input[type=file]{display:none}
+</style></head><body><main><header><h1>三国志曹操传</h1><small>C++20 · SDL3 · WebAssembly</small></header>
+<p class="notice">开场研究原型，尚不能完整游玩颍川之战。目前可体验开场故事、第一回合的友军与敌军行动，以及第二回合的放火、敌军混乱和曹操登场剧情；在战斗目标提示前暂停。对话时可以存档、读取或导出备份。<br>玩家操作、完整战斗、胜负及奖励仍在开发和验证中。</p>
+<canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()" aria-label="游戏画面：空格继续对话，数字 1 或 2 选择"></canvas>
+<nav aria-label="游戏与存档"><button id="start" disabled>重新开始</button><select id="slot" aria-label="存档槽"></select><button id="save" disabled>保存</button><button id="load" disabled>读取</button><button id="export" disabled>导出备份</button><button id="import" disabled>导入备份</button></nav>
+<input id="file" type="file" accept="application/json,.json"><p id="message" role="status">正在加载本地资源…</p><p class="muted">空格 / 点击继续 · 1 / 2 选择。存档仅保存在此浏览器；导出可用于备份或 Linux 版本。原版存档不受影响。</p>
+<details><summary>兼容性与诊断</summary><p>资源来自本机原版文件。没有 Wine 或 Windows 辅助进程。开场坐标、动作时序和音频映射仍需逐项对照原版。</p><pre id="status"></pre><pre id="runtime-log" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px" aria-label="运行日志"></pre><button id="storage-test" disabled>检测本地存档功能</button><p id="test-result"></p><button id="show-backup" disabled>查看备份文本</button><textarea id="backup-text" aria-label="备份文本" readonly hidden style="width:100%;height:100px"></textarea></details>
+</main><script>
+'use strict';
+const $=id=>document.getElementById(id),message=s=>{$('message').textContent=s};let ready=false,db,animationFrames=0;function frameProbe(){animationFrames++;requestAnimationFrame(frameProbe)}requestAnimationFrame(frameProbe);
+const runtimeLog=[];
+$('canvas').addEventListener('pointerdown',()=>$('canvas').focus({preventScroll:true}));
+function logRuntime(kind,value){
+ const detail=value instanceof Error?(value.stack||value.message):String(value);
+ runtimeLog.push(`${new Date().toISOString()} ${kind}: ${detail}`);
+ if(runtimeLog.length>80)runtimeLog.shift();
+ $('runtime-log').textContent=runtimeLog.join('\n');
+}
+window.addEventListener('error',e=>{logRuntime('error',e.error||e.message||('Resource: '+(e.target.src||e.target.href||'unknown')));message('引擎错误；请查看运行日志。')},true);
+window.addEventListener('unhandledrejection',e=>{logRuntime('rejection',e.reason);message('引擎错误；请查看运行日志。')});
+for(let i=1;i<=10;i++){const option=document.createElement('option');option.value=i;option.textContent=`存档 ${i} · 空`; $('slot').append(option)}
+const database=new Promise((resolve,reject)=>{const req=indexedDB.open('CaoCaoEnginePrototype',1);req.onupgradeneeded=()=>req.result.createObjectStore('snapshots',{keyPath:'slot'});req.onsuccess=()=>{db=req.result;db.onversionchange=()=>db.close();resolve(db)};req.onerror=()=>reject(req.error);req.onblocked=()=>message('请关闭其他旧版页面后再试。')});
+async function readSlot(slot){await database;return new Promise((resolve,reject)=>{const t=db.transaction('snapshots','readonly'),r=t.objectStore('snapshots').get(slot);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
+async function writeSlot(slot,snapshot){if(!Number.isInteger(slot)||slot<1||slot>10)throw Error('无效的存档槽');JSON.parse(snapshot);await database;await new Promise((resolve,reject)=>{const t=db.transaction('snapshots','readwrite');t.objectStore('snapshots').put({slot,snapshot,date:new Date().toISOString()});t.oncomplete=resolve;t.onerror=()=>reject(t.error);t.onabort=()=>reject(t.error||Error('保存被中断，旧存档保留。'))});await refreshSlots()}
+async function refreshSlots(){for(let i=1;i<=10;i++){const record=await readSlot(i);$('slot').options[i-1].textContent=`存档 ${i} · ${record?new Date(record.date).toLocaleString():'空'}`}}
+function call(name,types=[],values=[]){if(!ready)throw Error('引擎尚未就绪');return Module.ccall(name,'string',types,values)}
+function snapshot(){const raw=call('caocao_snapshot');const parsed=JSON.parse(raw);if(parsed.error)throw Error(parsed.error);return raw}
+function restore(raw){
+ if(!ready)throw Error('引擎尚未就绪');const bytes=Module.lengthBytesUTF8(raw);if(bytes>4*1024*1024)throw Error('存档过大');
+ // ccall's string conversion uses the small Wasm stack. Battle snapshots
+ // belong on the heap; keep allocation bounded and free it on every exit.
+ const pointer=Module._malloc(bytes+1);if(!pointer)throw Error('存档内存不足');
+ try{Module.stringToUTF8(raw,pointer,bytes+1);const result=JSON.parse(call('caocao_restore',['number'],[pointer]));if(result.error)throw Error(result.error)}finally{Module._free(pointer)}
+ $('canvas').focus();
+}
+function updateStatus(){if(!ready)return;const state=JSON.parse(call('caocao_status'));state.browser={visibility:document.visibilityState,animationFrames};$('status').textContent=JSON.stringify(state,null,2);$('save').disabled=$('export').disabled=$('show-backup').disabled=!state.can_save;$('canvas').setAttribute('aria-label',state.presentation.text||'游戏画面')}
+async function action(fn){try{await fn()}catch(e){message('操作失败：'+e.message)}finally{try{updateStatus()}catch(e){message(e.message)}}}
+document.addEventListener('visibilitychange',()=>{try{updateStatus()}catch(e){message(e.message)}});
+$('start').onclick=()=>action(()=>{Module.ccall('caocao_start',null,[],[]);$('canvas').focus();message('开场脚本已开始。')});
+$('save').onclick=()=>action(async()=>{const raw=snapshot();await writeSlot(Number($('slot').value),raw);message('已保存到此浏览器。')});
+$('load').onclick=()=>action(async()=>{const r=await readSlot(Number($('slot').value));if(!r)throw Error('此存档槽为空');restore(r.snapshot);message('已恢复存档。')});
+document.addEventListener('keydown',e=>{if(!ready)return;if(e.key==='F5'||e.key==='F9'){e.preventDefault();$(e.key==='F5'?'save':'load').click()}},true);
+$('show-backup').onclick=()=>action(()=>{$('backup-text').value=snapshot();$('backup-text').hidden=false;message('可复制此文本作为本地 JSON 备份。')});
+$('export').onclick=()=>action(()=>{const raw=snapshot(),url=URL.createObjectURL(new Blob([raw],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='caocao-prototype-'+Date.now()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);message('已导出当前状态。')});
+$('import').onclick=()=>$('file').click();$('file').onchange=()=>action(async()=>{const f=$('file').files[0];if(!f)return;if(f.size>4*1024*1024)throw Error('存档过大');restore(await f.text());message('备份已恢复；点击保存可写入选定槽。');$('file').value=''});
+$('storage-test').onclick=()=>action(async()=>{await database;const t=db.transaction('snapshots','readwrite'),s=t.objectStore('snapshots');s.put({slot:0,snapshot:'test'});t.abort();await new Promise(r=>{t.onabort=r});if(await readSlot(0))throw Error('事务回滚失败');$('test-result').textContent='IndexedDB 事务回滚通过；未修改 10 个存档槽。'});
+var Module={canvas:$('canvas'),print:s=>{console.log(s);logRuntime('stdout',s)},printErr:s=>{console.error(s);logRuntime('stderr',s);message('引擎日志已更新；请查看运行日志。')},onAbort:s=>{logRuntime('abort',s);message('引擎启动失败：'+s)},onRuntimeInitialized:()=>{ready=true;logRuntime('runtime','initialized');document.querySelectorAll('button').forEach(b=>b.disabled=false);message('资源已就绪。点击画面开始。');refreshSlots().catch(e=>message('本地存档不可用：'+e.message));setInterval(()=>{try{updateStatus()}catch(e){message(e.message)}},400)},setStatus:s=>{if(s)message(s)}};
+</script>{{{ SCRIPT }}}</body></html>

@@ -1,0 +1,859 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "routine": "0x43ac44..0x43acfa",
+  "cases": [
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 3,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 0,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 3
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 3
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 1,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 2,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 2
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 2
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 3,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 3
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 3
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 35,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 3
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 3
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [
+        1
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 1
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 1
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 0,
+      "preferred": 255,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [
+        {
+          "kind": "face",
+          "actor": 35,
+          "target": 3
+        },
+        {
+          "kind": "attack",
+          "actor": 35,
+          "target": 3
+        }
+      ],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 0,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 1,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 2,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 3,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 35,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [
+        1
+      ],
+      "calls": [],
+      "rng": 42
+    },
+    {
+      "item": 27,
+      "initial_target_hp": 1,
+      "preferred": 255,
+      "living_targets": [
+        1,
+        2,
+        3
+      ],
+      "calls": [],
+      "rng": 42
+    }
+  ],
+  "boundaries": "Original post-controller pursuit target gate and dispatch, not a full battle.\n\nExecutes 0x43ac44..0x43acfa: target HP, effect46, scratch-grid clearing, range\ngetter and target selector. Facing 0x435829 and next controller 0x4064f1 are\ndispatch boundaries, not replaced combat rules. Stops before action flags.\nSynthetic enemy Lu Bu at10,10; first target north, candidates east/south/west.\nThe already-tested controller's counter gate writes preferred=actor at0x40642f\nbefore testing dead defender HP; preferred35 reproduces that caller state.\nOther preferences characterize the selector without extrapolating their reachability.\n"
+}

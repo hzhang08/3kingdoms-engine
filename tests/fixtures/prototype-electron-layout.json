@@ -1,0 +1,508 @@
+{
+  "source": "Sv00s.e5s",
+  "source_sha256": "e06a1f9782ecccfcae244568feb0af9f4cbac8570a4e14c00b5939f317aa08be",
+  "scope": "Read-only interpretation of this exact slot; coordinates/directions/status cross-checked against the captured original screen. Not a general legacy-save importer.",
+  "turn": 2,
+  "turn_limit": 20,
+  "units": [
+    {
+      "id": 0,
+      "slot": 0,
+      "side": 0,
+      "x": 10,
+      "y": 6,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 117,
+      "mp": 33,
+      "offset": 1301,
+      "raw": "00007500210000000a060000ffff020007020303030303030001"
+    },
+    {
+      "id": 32,
+      "slot": 15,
+      "side": 1,
+      "x": 9,
+      "y": 6,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 130,
+      "mp": 36,
+      "offset": 1691,
+      "raw": "2000820024000f0109060000ffff020001020303030303030001"
+    },
+    {
+      "id": 3,
+      "slot": 16,
+      "side": 1,
+      "x": 8,
+      "y": 5,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 137,
+      "mp": 18,
+      "offset": 1717,
+      "raw": "030089001200100108050000ffff020001020303030303030001"
+    },
+    {
+      "id": 33,
+      "slot": 17,
+      "side": 1,
+      "x": 12,
+      "y": 5,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 130,
+      "mp": 16,
+      "offset": 1743,
+      "raw": "21008200100011010c050000ffff020001020303030303030001"
+    },
+    {
+      "id": 210,
+      "slot": 18,
+      "side": 1,
+      "x": 10,
+      "y": 16,
+      "direction": 0,
+      "status": 0,
+      "flags": 0,
+      "hp": 64,
+      "mp": 10,
+      "offset": 1769,
+      "raw": "d20040000a0012010a100000ff01020001000303030303030001"
+    },
+    {
+      "id": 211,
+      "slot": 19,
+      "side": 1,
+      "x": 9,
+      "y": 16,
+      "direction": 0,
+      "status": 0,
+      "flags": 0,
+      "hp": 69,
+      "mp": 10,
+      "offset": 1795,
+      "raw": "d30045000a00130109100000ff02020001000303030303030001"
+    },
+    {
+      "id": 258,
+      "slot": 21,
+      "side": 1,
+      "x": 9,
+      "y": 7,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 100,
+      "mp": 10,
+      "offset": 1847,
+      "raw": "020164000a00150109070000ffff020001020303030303030001"
+    },
+    {
+      "id": 259,
+      "slot": 22,
+      "side": 1,
+      "x": 10,
+      "y": 7,
+      "direction": 2,
+      "status": 0,
+      "flags": 0,
+      "hp": 100,
+      "mp": 10,
+      "offset": 1873,
+      "raw": "030164000a0016010a070000ffff020001020303030303030001"
+    },
+    {
+      "id": 146,
+      "slot": 35,
+      "side": 2,
+      "x": 9,
+      "y": 11,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 92,
+      "mp": 48,
+      "offset": 2211,
+      "raw": "92005c0030002302090b0000ff00020002020303030303030801"
+    },
+    {
+      "id": 147,
+      "slot": 36,
+      "side": 2,
+      "x": 10,
+      "y": 11,
+      "direction": 0,
+      "status": 8,
+      "flags": 0,
+      "hp": 92,
+      "mp": 48,
+      "offset": 2237,
+      "raw": "93005c00300024020a0b0000ff01020002000303030303030801"
+    },
+    {
+      "id": 474,
+      "slot": 37,
+      "side": 2,
+      "x": 8,
+      "y": 16,
+      "direction": 1,
+      "status": 8,
+      "flags": 8,
+      "hp": 70,
+      "mp": 5,
+      "offset": 2263,
+      "raw": "da0146000500250208100000ff02020801010303030303030801"
+    },
+    {
+      "id": 475,
+      "slot": 38,
+      "side": 2,
+      "x": 9,
+      "y": 15,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 24,
+      "mp": 5,
+      "offset": 2289,
+      "raw": "db01180005002602090f0000ff03020001020303030303030801"
+    },
+    {
+      "id": 476,
+      "slot": 39,
+      "side": 2,
+      "x": 12,
+      "y": 16,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 60,
+      "mp": 5,
+      "offset": 2315,
+      "raw": "dc013c00050027020c100000ff04020001020303030303030801"
+    },
+    {
+      "id": 477,
+      "slot": 40,
+      "side": 2,
+      "x": 11,
+      "y": 16,
+      "direction": 3,
+      "status": 8,
+      "flags": 0,
+      "hp": 51,
+      "mp": 5,
+      "offset": 2341,
+      "raw": "dd013300050028020b100000ff05020001030303030303030801"
+    },
+    {
+      "id": 478,
+      "slot": 41,
+      "side": 2,
+      "x": 10,
+      "y": 15,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 59,
+      "mp": 5,
+      "offset": 2367,
+      "raw": "de013b00050029020a0f0000ff06020001020303030303030801"
+    },
+    {
+      "id": 479,
+      "slot": 42,
+      "side": 2,
+      "x": 13,
+      "y": 13,
+      "direction": 1,
+      "status": 8,
+      "flags": 8,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2393,
+      "raw": "df015a0005002a020d0d0000ff07020801010303030303030801"
+    },
+    {
+      "id": 480,
+      "slot": 43,
+      "side": 2,
+      "x": 5,
+      "y": 10,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2419,
+      "raw": "e0015a0005002b02050a0000ff08020001020303030303030801"
+    },
+    {
+      "id": 481,
+      "slot": 44,
+      "side": 2,
+      "x": 5,
+      "y": 11,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2445,
+      "raw": "e1015a0005002c02050b0000ff09020001020303030303030801"
+    },
+    {
+      "id": 482,
+      "slot": 45,
+      "side": 2,
+      "x": 7,
+      "y": 11,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2471,
+      "raw": "e2015a0005002d02070b0000ff0a020001020303030303030801"
+    },
+    {
+      "id": 483,
+      "slot": 46,
+      "side": 2,
+      "x": 8,
+      "y": 10,
+      "direction": 0,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2497,
+      "raw": "e3015a0005002e02080a0000ff0b020001000303030303030801"
+    },
+    {
+      "id": 484,
+      "slot": 47,
+      "side": 2,
+      "x": 12,
+      "y": 10,
+      "direction": 0,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2523,
+      "raw": "e4015a0005002f020c0a0000ff0c020001000303030303030801"
+    },
+    {
+      "id": 485,
+      "slot": 48,
+      "side": 2,
+      "x": 12,
+      "y": 12,
+      "direction": 2,
+      "status": 8,
+      "flags": 0,
+      "hp": 90,
+      "mp": 5,
+      "offset": 2549,
+      "raw": "e5015a00050030020c0c0000ff0d020001020303030303030801"
+    }
+  ],
+  "fires": [
+    {
+      "x": 13,
+      "y": 5,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 51
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 56
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "terrain": 26,
+      "previous_terrain": 0,
+      "offset": 61
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 66
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 71
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 76
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 81
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 86
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 91
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 96
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 101
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 106
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 111
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 0,
+      "offset": 116
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 23,
+      "offset": 121
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "terrain": 26,
+      "previous_terrain": 23,
+      "offset": 126
+    },
+    {
+      "x": 13,
+      "y": 9,
+      "terrain": 26,
+      "previous_terrain": 0,
+      "offset": 131
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "terrain": 26,
+      "previous_terrain": 1,
+      "offset": 136
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 141
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 146
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 151
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 156
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "terrain": 26,
+      "previous_terrain": 14,
+      "offset": 161
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 0,
+      "offset": 166
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "terrain": 26,
+      "previous_terrain": 23,
+      "offset": 171
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "terrain": 26,
+      "previous_terrain": 23,
+      "offset": 176
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "terrain": 26,
+      "previous_terrain": 23,
+      "offset": 181
+    }
+  ]
+}

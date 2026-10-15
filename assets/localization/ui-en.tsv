@@ -1,0 +1,382 @@
+攻击	Attack
+策略	Tactics
+道具	Items
+待命	Wait
+取消	Cancel
+保存	Save
+读取	Load
+情报	Info
+结束回合	End turn
+重新开始	Restart
+返回主页	Home
+选择战场	Battles
+宝物	Treasures
+全部装备	All gear
+宝物与装备	Treasures & Equipment
+武将情报	Unit Information
+能力	Stats
+装备	Equipment
+武将列传	Biography
+部队特性	Class
+部队属性	Unit
+基本能力	Attributes
+状态	Status
+武器	Weapon
+护具	Armor
+辅助	Accessory
+攻击力	Attack
+防御力	Defense
+精神力	Spirit
+爆发力	Agility
+士气	Morale
+武力	Strength
+统率	Leadership
+智力	Intellect
+敏捷	Agility
+运气	Luck
+移动力	Move
+攻击范围	Attack range
+兵力	HP
+策略值	MP
+经验	EXP
+正常	Normal
+中毒	Poison
+混乱	Confusion
+麻痹	Immobilized
+禁咒	Silenced
+无	None
+毒	P
+我军	Player
+友军	Ally
+敌军	Enemy
+我军行动	Player turn
+友军行动	Allied turn
+敌军行动	Enemy turn
+我军移动	Player moving
+敌军移动	Enemy moving
+我军攻击	Player attacking
+敌军攻击	Enemy attacking
+地形与物资	Terrain & items
+胜利	Victory
+战败	Defeat
+回合 	Turn 
+等级 	Level 
+级！	!
+级	
+行囊	Bag
+ 装备中	 equipped
+上一武将	Previous
+下一武将	Next
+上一页	Prev
+下一页	Next
+下一战	Next battle
+确定	OK
+确定更换	Equip
+关闭 Esc	Close Esc
+返回 Esc	Back Esc
+武将 V	Unit V
+查看道具 P	Items P
+宝物 G	Treasures G
+存档位 F6	Saves F6
+返回主页 B	Home B
+选择战场 B	Battles B
+整备装备	Equipment
+装备更换 G · 战后整备	Change gear G (after battle)
+装备更换 · 	Change gear: 
+卸下当前装备	Unequip
+卸下后保留在行囊，等级和经验不会重置。	Returns to the bag. Its level and EXP are preserved.
+装备已更换。	Equipment changed.
+使用道具 P	Use items P
+查看武将 / 装备更换	View / change gear
+查看武将装备	View unit gear
+查看宝物与装备 G	Treasures & gear G
+尚未持有宝物。战斗获得的宝物将在这里显示。	No treasures yet. Treasures earned in battle appear here.
+战后整备：查看武将装备后可更换。	Camp: open a unit's equipment to change gear.
+战斗中仅供查看；胜利剧情结束后可更换装备。	View only during battle. Change gear after the victory dialogue.
+本战道具	Battle Items
+恢复兵力 30	Restore 30 HP
+恢复兵力 80	Restore 80 HP
+解除中毒	Cure poison
+使用前，请选择尚未行动的我军。	Select a player unit that has not acted.
+使用者：	User: 
+使用 	Use 
+使用	Use
+点击使用后，再点击自己或周围八格友军。\n满兵力或未中毒也会消耗；使用结束本次行动。	Tap Use, then yourself or an ally in an adjacent tile.\nConsumes the item even if not needed, and ends the unit's action.
+物资随存档保存；地点只能领取一次。	Items are saved. Each supply site can be collected once.
+战场情报	Battle Information
+战场消息	Battle News
+胜利：	Victory: 
+失败：曹操被击败，或超过20回合	Defeat: Cao Cao falls, or the battle exceeds 20 turns.
+失败：曹操被击败	Defeat: Cao Cao falls.
+击毙张宝和张梁	Defeat Zhang Bao and Zhang Liang
+消灭全部敌军	Defeat all enemies
+曹操到达西端（0,4至0,9），或击退李儒	Cao Cao reaches the west edge (0,4 to 0,9), or Li Ru is defeated
+颍川之战	Yingchuan
+汜水关之战	Sishui Pass
+虎牢关之战	Hulao Pass
+董卓追击战	Pursuit of Dong Zhuo
+颍川之战：击败所有敌军，曹操不能战败。	Yingchuan: defeat all enemies. Keep Cao Cao alive.
+，曹操不能战败。	. Keep Cao Cao alive.
+点击我军选择，点击空地移动，点击敌军攻击。\n右键 / Esc 撤回移动；W 待命；E 结束回合。\nF5 保存；F9 读取；R 重新开始；P 背包。	Tap a player unit, then a tile to move or an enemy to attack.\nRight-click / Esc: undo; W: wait; E: end turn.\nF5: save; F9: load; R: restart; P: items.
+反击、连击、经验、伏兵与剧情事件已开放。\nF6 管理十个存档；胜利后下一战继承成长。	Counters, double attacks, EXP, ambushes and story events are enabled.\nF6: ten save slots. Growth carries over to the next battle.
+战斗体验版：5种策略、地形恢复、道具收集。\n回合限制20；混乱敌军停止行动一次。	Prototype: five tactics, terrain healing and pickups.\n20-turn limit; confused enemies skip one action.
+独立战场：固定阵容，无单挑和伏兵事件。\n伏兵开场显示；所有友军可操控；B 选择战场。	Standalone battle: fixed roster, no duels or ambush events.\nAllies are controllable; hidden troops start visible. B: battles.
+旧版存档：固定等级，无回合限制。	Legacy save: fixed levels, no turn limit.
+对话中：点击对话框，或按空格 / 回车继续。	Tap the dialogue, or press Space / Enter to continue.
+选择行动；方向键选择，回车确认，右键取消。	Choose an action. Arrows: select; Enter: confirm; right-click: cancel.
+请选择红色目标，或右键返回。	Choose a red target, or right-click to go back.
+地形恢复与道具收集。	Terrain recovery and item collection.
+ 移动中……	 is moving...
+ 使用	 uses 
+ 攻击 	 attacks 
+攻击结束，共 	 attack complete: 
+ 点伤害。	 damage.
+点伤害。	 damage.
+点体力。	 HP.
+ 地形恢复兵力 +	 terrain recovery: HP +
+ 回合恢复	 turn recovery
+ 策略值 +	 MP +
+ 兵力 	 HP 
+兵力 +	HP +
+ 状态解除	 status cured
+ 经验 +	 EXP +
+　武器经验 +	 Weapon EXP +
+升至 	 reached level 
+获得 	Received 
+：会心一击！	: Critical hit!
+反击	Counter
+连击	Double attack
+发动方天画戟追击！	Sky Piercer follow-up attack!
+中毒已解除	Poison cured
+未中毒，仍消耗道具	Not poisoned; item consumed
+结束。	 finished.
+出场。	 has arrived.
+回合开始恢复最大兵力的 	start-of-turn recovery: max HP x 
+继续  空格 / 回车	Continue  Space / Enter
+保存 F5 / 读取 F9	Save F5 / Load F9
+战败：曹操已被击败。	Defeat: Cao Cao has fallen.
+战败：超过回合限制。	Defeat: turn limit exceeded.
+战败：曹操战败或超过回合限制。	Defeat: Cao Cao fell or the turn limit was exceeded.
+战败：曹操已被击败。可以重新开始。	Cao Cao has fallen. You can restart.
+战败：超过回合限制。可以重新开始。	Turn limit exceeded. You can restart.
+点击重新开始，或读取存档。	Restart the battle or load a save.
+选择行动	Choose an action
+选择策略	Choose a tactic
+选择独立战场	Standalone Battles
+返回当前战场 Esc	Return to battle Esc
+选择独立战场会创建新队伍。\n继承成长和物资，请在胜利后点击下一战。	A standalone battle creates a new party.\nUse Next Battle after victory to carry over growth and items.
+点击开始新战斗；各战场分别保存，F9 读取。\n固定阵容；伏兵开场显示；无单挑和战役成长。	Start a battle; each has a separate save. F9: load.\nFixed roster; ambush troops start visible; no duels or campaign growth.
+攻击：选择标记目标。	Attack: choose a highlighted target.
+策略：选择策略和目标。	Tactics: choose a tactic and target.
+道具：选择道具，再点击自己或周围友军。	Items: choose an item, then yourself or a nearby ally.
+待命：结束这支部队的行动。	Wait: finish this unit's action.
+取消：撤回移动和选择。	Cancel: undo movement and selection.
+：选择标记目标。	: choose a highlighted target.
+：点击自己或周围八格友军；无效果也会消耗。右键取消。	: select yourself or an adjacent ally. Consumed even if not needed. Right-click to cancel.
+请选择绿色目标：自己或周围八格友军。	Choose a green target: yourself or an adjacent ally.
+动画中，请等待。	Please wait for the animation.
+动画中，请等待后再长按。	Wait for the animation, then hold again.
+战场已暂停。	Battle paused.
+请点选情报页面，或关闭情报返回战场。	Choose an information tab, or close it to return to battle.
+请先完成当前对话或关闭操作窗口。	Finish the dialogue or close the current window first.
+请长按战场上的武将。	Hold a unit on the battlefield.
+请先完成剧情。	Finish the story first.
+请先继续对话。	Continue the dialogue first.
+请先攻击、待命或取消移动。	Attack, wait or cancel the move first.
+请先选择我军部队。	Select a player unit first.
+请完成本战的胜利剧情和奖励，再进入下一战。	Finish the victory dialogue and rewards before continuing.
+已取消移动和选择。	Movement and selection cancelled.
+已移动。选择敌军攻击，或待命；右键撤回移动。	Moved. Attack an enemy or wait. Right-click to undo.
+已经移动，请攻击、待命或取消。	Already moved. Attack, wait or cancel.
+部队待命。	Unit is waiting.
+部队混乱，无法行动。	Unit is confused and cannot act.
+混乱，停止行动。	 is confused and skips its action.
+这支部队已行动。	This unit has already acted.
+不是移动范围。	Outside movement range.
+敌军不在攻击范围内。	Enemy is out of attack range.
+敌军部队。	Enemy unit.
+敌军行动中……	Enemy turn...
+友军行动中……	Allied turn...
+我军回合。	Your turn.
+选择空地移动，选择敌军攻击；右键取消。	Choose an empty tile to move, or an enemy to attack. Right-click to cancel.
+现在不能下达命令。	Commands are unavailable now.
+现在不能使用道具。	Items are unavailable now.
+策略目标、地形或策略值无效。	Invalid tactic target or terrain, or insufficient MP.
+道具不足、部队已行动，或目标不在范围内。	No item, unit already acted, or target out of range.
+战斗中不能更换装备，请在战后整备时更换。	Change equipment at camp after the battle.
+只能更换我军装备。	Only player units can change equipment.
+该兵种不能装备此物品。	This class cannot equip this item.
+无效的装备选择。	Invalid equipment choice.
+旧版存档未开放装备更换。	Equipment changes are unavailable in legacy saves.
+尚未习得策略	No tactics learned
+暂未开放	Unavailable
+旧版规则	Legacy rules
+禁咒中	Silenced
+已习得	Learned
+策略值不足	Not enough MP
+出阵数 	Battles 
+  撤退数 	  Retreats 
+读取当前战役的旧版存档	Load this battle's legacy save
+本地存档与备份	Local Saves & Backups
+存档 	Slot 
+  已选择	  Selected
+返回游戏 Esc	Back to game Esc
+导出备份	Export backup
+导入备份	Import backup
+导入不会覆盖存档；选定位置保存后才会写入。	Import does not overwrite a slot until you save to it.
+没有可读取的存档。	No save to load.
+已读取存档。	Save loaded.
+已保存。	Saved.
+已导入备份；请保存到选择的存档位。	Backup imported. Save it to your chosen slot.
+已导出备份。	Backup exported.
+导出失败。	Export failed.
+保存失败，原存档未改动。	Save failed. The existing save is unchanged.
+文件选择器不可用。	File picker unavailable.
+已完成当前原型的全部战役。	All battles in this prototype are complete.
+战场不存在。	Battle does not exist.
+武将不存在。	Unit does not exist.
+无效的地图坐标。	Invalid map coordinates.
+当前没有对话。	No dialogue is active.
+当前没有剧情选项。	No story choice is active.
+剧情选项无效。	Invalid story choice.
+保存 F5：保存到本地存档。	Save F5: save locally.
+读取 F9：恢复本地存档。	Load F9: restore a local save.
+待命 W：结束所选部队的行动。	Wait W: finish the selected unit's action.
+取消 Esc / 右键：撤回移动和选择。	Cancel Esc / right-click: undo movement and selection.
+结束回合 E：所有我军待命，敌军开始行动。	End turn E: finish all player actions and begin the next phase.
+情报 I：胜利条件、部队情报和操作说明。	Info I: objectives, unit details and controls.
+重新开始 R：重新开始战斗，保留已有存档。	Restart R: restart the battle; existing saves remain.
+道具 P：查看数量，选择道具后点击自己或周围友军。	Items P: view inventory, choose an item, then yourself or a nearby ally.
+三国志曹操传 · 四战体验版 0.10.0	Legend of Cao Cao - Four Battles 0.10.0
+的	's 
+：	: 
+。	.
+！	!
+？	?
+，	, 
+、	, 
+……	...
+…	...
+（	(
+）	)
+“	"
+”	"
+「	"
+」	"
+　	 
+防御	Defense
+移动并待命。	Move and wait.
+移动	Move
+：恢复	: recovered 
+存档兵力或行动标记无效。	Invalid save: HP or action flags.
+存档回合无效。	Invalid save: turn.
+存档固定属性不一致。	Invalid save: fixed attributes differ.
+存档坐标无效。	Invalid save: coordinates.
+存档对话分支无效。	Invalid save: dialogue branch.
+存档对话条件无效。	Invalid save: dialogue conditions.
+存档对话标记无效。	Invalid save: dialogue flags.
+存档对话状态无效。	Invalid save: dialogue state.
+存档对话页码无效。	Invalid save: dialogue page.
+存档对话顺序无效。	Invalid save: dialogue order.
+存档战场无效。	Invalid save: battle.
+存档战败对话无效。	Invalid save: defeat dialogue.
+存档撤回坐标不可用。	Invalid save: undo coordinates unavailable.
+存档撤回坐标无效。	Invalid save: undo coordinates.
+存档敌军顺序无效。	Invalid save: enemy order.
+存档状态无效。	Invalid save: state.
+存档策略值或状态无效。	Invalid save: MP or status.
+存档胜利对话无效。	Invalid save: victory dialogue.
+存档胜负状态无效。	Invalid save: battle outcome.
+存档行动部队无效。	Invalid save: acting unit.
+存档行动阶段无效。	Invalid save: turn phase.
+存档过大。	Save file is too large.
+存档选择无效。	Invalid save: selection.
+存档部队不完整。	Invalid save: missing units.
+存档部队固定字段无效。	Invalid save: fixed unit fields.
+存档部队坐标重复。	Invalid save: overlapping units.
+存档部队字段无效。	Invalid save: unit fields.
+存档错误或版本不兼容。	Corrupt or incompatible save.
+尚未保存	Not yet saved
+正在保存到云端……	Saving to cloud...
+云端已保存 · 	Cloud saved · 
+云端未同步 · 进度已保留在本机	Cloud not synced · Saved locally
+已读取云端存档 · 	Loaded cloud save · 
+JEV 暂不可用 · 使用本地判断	JEV unavailable · Local AI
+四战通关！你的完成时间已记录到英雄榜。	All four battles complete! Your finish time is on the leaderboard.
+本战胜利！完成整备后，点击下一战继续。	Victory! Finish preparations, then choose Next Battle.
+胜利！	Victory! 
+中毒。	 Poisoned.
+接我这招吧！ 这就是皇天之剑！	Take this! The sword of Heaven!
+挡我者死！ 让开让开……！	Death to those in my way! Stand aside!
+你觉悟吧！	Prepare yourself!
+你最好记着我！ 我就是关羽关云长！	Remember my name! Guan Yu, Guan Yunchang!
+神弓开！箭火炽！	Divine bow, unleash your blazing arrows!
+精神集中！	Focus!
+呀啊啊啊啊…………！	Hyaaaaah!
+呀嘿呀嘿呀……！	Hyah! Hyah!
+让你知道我弓箭的可怕！	Learn to fear my bow!
+唔喔喔喔喔、要你一击毙命！	Uooooh! One blow will finish you!
+神力助我！	Divine power, aid me!
+貂蝉纷舞！一闪即逝！	Diaochan dances! Gone in a flash!
+别碍路！别碍路！	Out of my way! Out of my way!
+赐教！	Show me your skill!
+交过手就知道我老不老了！	Cross blades with me, then call me old!
+让你一辈子忘不了锦马超之名！	You will never forget Ma Chao the Splendid!
+喔喔、喔喔、喔喔！	Oh! Oh! Oh!
+俺可没什么耐性！	I have little patience!
+我不会辜负主公期望的！	I will not fail my lord!
+无名小卒！快退下！	Nobody! Stand down!
+你给我站着别动！	Stand still!
+这就是你我实力的差距。	Now you see the gap between us.
+这是万民的愤怒！	This is the people's wrath!
+喔喔喔……！	Uooooh!
+哈啊啊……！	Haaaah!
+呀啊啊……！	Hyaaaah!
+喝……！	Hah!
+唔喔喔……！	Uooooh!
+杀啊啊……！	Charge!
+看招啊……！	Take this!
+吃我一记！！	Take that!
+杀……！	Charge!
+去死吧！！！	Die!
+唷呵……！	Hyah!
+呀呔……！	Hah!
+嗯嗯嗯……！	Hmmm!
+唔唔唔……！	Ugh!
+呼呼呼……！	Hah! Hah!
+嗯嗯！？	Hmm!?
+哼！！	Hmph!
+嗯嗯嗯！	Hmmm!
+讨厌！！	How annoying!
+哎呀！！	Ah!
+看我的！	Watch this!
+一切就看这一击了！	Everything rests on this blow!
+一定要跟你分出高下！	We will settle this!
+决不能输！	I cannot lose!
+吃我这记致命一击吧！	Take this killing blow!
+准备接招吧！！	Ready yourself!
+你准备受死吧！	Prepare to die!
+我来啦、我来啦、我来啦！！	Here I come! Here I come!
+※△●◇÷★％！	@#%*!
+你最好记着我！\n我就是关羽关云长！	Remember my name!\nGuan Yu, Guan Yunchang!
+挡我者死！\n让开让开……！	Death to those in my way!\nStand aside!
+接我这招吧！\n这就是皇天之剑！	Take this!\nThe sword of Heaven!
+
+我军全体武将	all friendly units
+战败：我军全体武将已被击败。	Defeat: all friendly units have fallen.
+失败：我军全体武将被击败，或超过20回合	Defeat: all friendly units fall, or 20 turns expire.
+
+失败：	Defeat: 
+ 对 	 vs 
+出战  [	Choose  [
+击败	Defeat 
+已被击败。	 has fallen.
+战败或超过回合限制。	 fell or the turn limit was exceeded.
+敌军随机出战：吕布 或 董卓（各 50%）	Random opponent: Lu Bu or Dong Zhuo (50% each)
+被击败	 falls
+请先选择武将。	Choose a hero first.
+迎战吕布时，随机增加一名我军武将。	Against Lu Bu, a random extra hero joins your side.
+返回战场  [Esc]	Return to battle  [Esc]
+选择出战武将	Choose your hero
+，或超过20回合	, or 20 turns expire.
+：击败敌军。	: defeat the enemy.

@@ -1,0 +1,288 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "attack_fixture_sha256": "4bb2ad08bb272ad45d4a719cf774d0554e45f06452c3aeee13fb6797946176dd",
+  "trace": [
+    {
+      "kind": "event_batch",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "priority",
+      "phase": 1
+    },
+    {
+      "kind": "cursor",
+      "value": 0
+    },
+    {
+      "kind": "ai_action_boundary",
+      "slot": 20
+    },
+    {
+      "kind": "message_pump",
+      "message": 514
+    },
+    {
+      "kind": "action_event_gate",
+      "phase": 1
+    },
+    {
+      "kind": "event_batch",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "death_scan",
+      "phase": 1
+    },
+    {
+      "kind": "unit_redraw",
+      "phase": 1
+    },
+    {
+      "kind": "redraw",
+      "args": [
+        6,
+        5,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "event_batch",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "cursor",
+      "value": 0
+    },
+    {
+      "kind": "ai_action_boundary",
+      "slot": 18
+    }
+  ],
+  "actions": [
+    20,
+    18
+  ],
+  "phase": 1,
+  "rng": 2516284547,
+  "next_unit": 210,
+  "priority_recomputed": 1,
+  "boundaries": "Execute the original phase caller around a supplied completed first attack.\n\nThe first AI call is an explicit input boundary: its separately compared movement\nand attack result is installed. Caller filtering, action-event gate, death scan,\nredraw request, event selector and next actor selection then execute originally.\nThe probe stops before the second AI action or a required death handler.\n"
+}

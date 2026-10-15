@@ -1,0 +1,506 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "cases": [
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        0
+      ],
+      "before_cursor": [
+        255,
+        255
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": []
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        0
+      ],
+      "before_cursor": [
+        8,
+        4
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            8,
+            4,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        0
+      ],
+      "before_cursor": [
+        0,
+        0
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        4,
+        0
+      ],
+      "before_cursor": [
+        255,
+        255
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "camera",
+          "tile": [
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        4,
+        0
+      ],
+      "before_cursor": [
+        8,
+        4
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            8,
+            4,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        4,
+        0
+      ],
+      "before_cursor": [
+        0,
+        0
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        2
+      ],
+      "before_cursor": [
+        255,
+        255
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        2
+      ],
+      "before_cursor": [
+        8,
+        4
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            8,
+            4,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        3,
+        2
+      ],
+      "before_cursor": [
+        0,
+        0
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        7,
+        12
+      ],
+      "before_cursor": [
+        255,
+        255
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "camera",
+          "tile": [
+            5,
+            4
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            9
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            10
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            11
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        7,
+        12
+      ],
+      "before_cursor": [
+        8,
+        4
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            8,
+            4,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            5,
+            4
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            9
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            10
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            11
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        3,
+        0
+      ],
+      "destination": [
+        7,
+        12
+      ],
+      "before_cursor": [
+        0,
+        0
+      ],
+      "after_cursor": [
+        255,
+        255
+      ],
+      "events": [
+        {
+          "kind": "redraw",
+          "args": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            5,
+            4
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            9
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            10
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            11
+          ]
+        },
+        {
+          "kind": "camera",
+          "tile": [
+            7,
+            12
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": "Original camera-scroll cursor lifetime, including unchanged destinations.\n\n454cef and45461c execute unmodified. Camera placement and tile redraw are\ncaptured host boundaries. No units, rules, assets or random state are altered.\n"
+}

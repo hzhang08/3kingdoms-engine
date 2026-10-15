@@ -1,0 +1,33 @@
+{
+  "name": "caocao-special-ui-only",
+  "main": "tests/ui-worker.ts",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*",
+      "/__test/*"
+    ]
+  },
+  "vars": {
+    "APP_ORIGIN": "http://127.0.0.1:8799",
+    "BETTER_AUTH_SECRET": "isolated-local-ui-fixture-secret-not-for-production",
+    "GOOGLE_CLIENT_ID": "local-fixture",
+    "GOOGLE_CLIENT_SECRET": "local-fixture",
+    "JEV_DAILY_USER_LIMIT": "0",
+    "JEV_DAILY_GLOBAL_LIMIT": "0"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "caocao-ui-test",
+      "database_id": "00000000-0000-0000-0000-000000000001",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

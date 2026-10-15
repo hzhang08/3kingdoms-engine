@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#242925"><meta name="description" content="三国志曹操传四战体验版。重返颍川、汜水关、虎牢关与董卓追击战。Google 登录，保存征程。" data-i18n-content="三国志曹操传四战体验版。重返颍川、汜水关、虎牢关与董卓追击战。Google 登录，保存征程。"><title data-i18n="三国志曹操传 · 四战征程">三国志曹操传 · 四战征程</title><link rel="icon" href="/icon.png"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="三国志曹操传首页" data-i18n-aria-label="三国志曹操传首页"><span class="seal">曹</span><span><span data-i18n="三国志曹操传">三国志曹操传</span><small><span data-i18n="四 战 征 程">四 战 征 程</span></small></span></a><div class="header-tools"><button id="site-language" class="language-switch" aria-label="切换为英文" aria-pressed="false"><span lang="zh-CN">中文</span> / <span lang="en">EN</span></button><div class="account"><span id="account-name"></span><button id="rename-user" class="quiet" hidden><span data-i18n="修改名字">修改名字</span></button><button id="sign-out" class="quiet" hidden><span data-i18n="退出登录">退出登录</span></button></div></div></header>
+<main>
+ <section id="home" class="home">
+  <div class="entry-art"><img src="/entry.png" alt="三国志曹操传原版标题画面，古城背景与金色标题" data-i18n-alt="三国志曹操传原版标题画面，古城背景与金色标题" width="640" height="400"><div class="chapter-strip"><span><span data-i18n="壹 · 颍川">壹 · 颍川</span></span><span><span data-i18n="贰 · 汜水关">贰 · 汜水关</span></span><span><span data-i18n="叁 · 虎牢关">叁 · 虎牢关</span></span><span><span data-i18n="肆 · 追击董卓">肆 · 追击董卓</span></span></div></div>
+  <aside class="entry-menu">
+   <span class="eyebrow"><span data-i18n="乱世起兵 · 再续征程">乱世起兵 · 再续征程</span></span><h1 id="welcome"><span data-i18n="逐鹿天下">逐鹿天下</span><br><span data-i18n="从此启程">从此启程</span></h1><p class="intro"><span data-i18n="原版美术与熟悉的战棋战场。">原版美术与熟悉的战棋战场。</span><br><span data-i18n="以你的名字，留下四战战绩。">以你的名字，留下四战战绩。</span></p>
+   <div id="login-panel"><button id="google-login" class="google"><span class="google-g" aria-hidden="true">G</span><span data-i18n="使用 Google 账号登录">使用 Google 账号登录</span></button><p class="fine"><span data-i18n="登录后保存战斗进度，并以自选用户名登榜。">登录后保存战斗进度，并以自选用户名登榜。</span></p></div>
+   <form id="username-form" hidden><label for="username"><span data-i18n="初次相逢，请留下你的名字">初次相逢，请留下你的名字</span></label><input id="username" name="username" autocomplete="nickname" placeholder="输入用户名" data-i18n-placeholder="输入用户名" minlength="2" maxlength="20" required><p class="fine"><span data-i18n="2–20 个汉字、字母、数字、下划线或短横线。此名字会显示在排行榜中。">2–20 个汉字、字母、数字、下划线或短横线。此名字会显示在排行榜中。</span></p><button class="primary" type="submit"><span data-i18n="确认名字，进入游戏">确认名字，进入游戏</span></button></form>
+   <nav id="player-menu" aria-label="游戏主菜单" data-i18n-aria-label="游戏主菜单" hidden>
+    <button id="continue-game" class="primary" hidden><span data-i18n="继续征程">继续征程</span> <span class="save-kind" data-i18n="自动存档">自动存档</span></button>
+    <button id="new-game" class="menu-item"><span class="menu-num">01</span><span><span data-i18n="开始新游戏">开始新游戏</span><small><span data-i18n="从颍川起，连战四关">从颍川起，连战四关</span></small></span><span class="arrow">→</span></button>
+    <button id="view-saves" class="menu-item"><span class="menu-num">02</span><span><span data-i18n="读取存档">读取存档</span><small id="save-count">十个手动存档位</small></span><span class="arrow">→</span></button>
+    <button id="view-ranks" class="menu-item"><span class="menu-num">03</span><span><span data-i18n="英雄榜">英雄榜</span><small><span data-i18n="征战中的豪杰与四战通关者">征战中的豪杰与四战通关者</span></small></span><span class="arrow">→</span></button>
+    <button id="recover-local" class="quiet" hidden><span data-i18n="恢复尚未同步的进度">恢复尚未同步的进度</span></button>
+   </nav>
+  </aside>
+ </section>
+ <section id="game" hidden>
+  <div class="game-bar"><button id="back-home" class="quiet">← 返回主页</button><strong id="battle-title">颍川之战</strong><div class="game-actions"><button id="music-toggle" aria-pressed="true">♫ 音乐 开</button><button id="ai-toggle" aria-pressed="true">JEV 开</button><button id="save-game">保存 / 读取</button><button id="fullscreen" aria-label="全屏显示">全屏</button></div></div>
+  <div class="game-viewport-controls"><span id="touch-hint" role="status">长按武将查看情报 · 单指拖动 / 双指缩放</span><div class="zoom-controls" role="group" aria-label="游戏画面缩放" data-i18n-aria-label="游戏画面缩放"><button id="close-unit-info" hidden>关闭情报</button><button id="zoom-out" aria-label="缩小游戏画面">−</button><output id="zoom-level" aria-label="画面缩放比例" data-i18n-aria-label="画面缩放比例">100%</output><button id="zoom-in" aria-label="放大游戏画面">＋</button><button id="zoom-reset">复位</button><button id="battle-language" class="language-switch" aria-label="切换为英文" aria-pressed="false"><span lang="zh-CN">中文</span> / <span lang="en">EN</span></button></div></div>
+  <div class="battle-frame" id="battle-viewport"><canvas id="canvas" tabindex="0" aria-label="战场。轻点我军移动，长按武将或右键查看情报，单指拖动，双指缩放。E 结束回合，F6 管理存档。"></canvas><span id="hold-progress" aria-hidden="true" hidden></span></div>
+  <div class="game-foot"><span id="sync-status">尚未保存</span><span id="battle-help">移动后选择行动 · 右键 / Control 点击查看情报 · E 结束回合 · F6 存档</span></div>
+ </section>
+ <p id="status" role="status" aria-live="polite">正在连接……</p>
+ <section id="loading" hidden><span class="eyebrow"><span data-i18n="整军待发">整军待发</span></span><h2><span data-i18n="正在准备战场">正在准备战场</span></h2><progress id="load-progress" max="100" value="0"></progress><p id="load-detail"><span data-i18n="首次进入需要下载游戏资源，之后浏览器会缓存。">首次进入需要下载游戏资源，之后浏览器会缓存。</span></p></section>
+</main>
+<footer><span><span data-i18n="三国志曹操传 · 四战体验版">三国志曹操传 · 四战体验版</span></span><span><span data-i18n="原作 © 1998, 1999 KOEI CO., LTD.">原作 © 1998, 1999 KOEI CO., LTD.</span></span><button id="about" class="quiet"><span data-i18n="说明与隐私">说明与隐私</span></button></footer>
+<dialog id="modal"><div class="dialog-head"><h2 id="modal-title"></h2><div class="dialog-tools"><button id="modal-language" class="language-switch" aria-label="切换为英文" aria-pressed="false"><span lang="zh-CN">中文</span> / <span lang="en">EN</span></button><button id="close-modal" class="quiet" aria-label="关闭" data-i18n-aria-label="关闭">✕</button></div></div><div id="modal-content"></div></dialog>
+</body></html>

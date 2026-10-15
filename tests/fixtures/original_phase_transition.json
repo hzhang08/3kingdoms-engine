@@ -1,0 +1,718 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "patch_sha256": "25816a4a462a713c380a94f5a2e6105f3ccec7a6eb4745b2f91be2374237c83b",
+  "trace": [
+    {
+      "kind": "banner",
+      "args": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "event_batch",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "event_scan",
+      "phase": 0
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 0
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 0
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 1
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 1
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 2
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 2
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 3
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 3
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 4
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 4
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 5
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 5
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 6
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 6
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 7
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 7
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 8
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 8
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 9
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 9
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 10
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 10
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 11
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 11
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 12
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 12
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 13
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 13
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 14
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 14
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 15
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 15
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 16
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 16
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 17
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 17
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 18
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 18
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 19
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 19
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 20
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 20
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 21
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 21
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 22
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 22
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 23
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 23
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 24
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 24
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 25
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 25
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 26
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 26
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 27
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 27
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 28
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 28
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 29
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 29
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 30
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 30
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 31
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 31
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 32
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 32
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 33
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 33
+    },
+    {
+      "kind": "status",
+      "phase": 0,
+      "slot": 34
+    },
+    {
+      "kind": "grades",
+      "phase": 0,
+      "slot": 34
+    },
+    {
+      "kind": "poison",
+      "phase": 0
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 0
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 1
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 2
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 3
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 4
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 5
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 6
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 7
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 8
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 9
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 10
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 11
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 12
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 13
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 14
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 15
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 16
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 17
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 18
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 19
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 20
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 21
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 22
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 23
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 24
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 25
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 26
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 27
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 28
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 29
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 30
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 31
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 32
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 33
+    },
+    {
+      "kind": "regeneration",
+      "phase": 0,
+      "slot": 34
+    },
+    {
+      "kind": "player_gate",
+      "phase": 0
+    },
+    {
+      "kind": "event_batch",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "event_scan",
+      "phase": 1
+    },
+    {
+      "kind": "priority",
+      "phase": 1
+    }
+  ],
+  "focus": [
+    [
+      10,
+      17
+    ]
+  ],
+  "actor": {
+    "slot": 20,
+    "id": 234
+  },
+  "phase": 1,
+  "rng": 1,
+  "input_active": 0,
+  "persistent_unchanged": true,
+  "boundaries": "Input is original post-introduction roster with completed event 0x1e00 (flag 14 and facing). All phase caller/selector/maintenance/priority rules and disabled-autosave patch execute. Turn banner and focus requests captured; window/redraw/input/cursor/OS message-pump boundaries omitted. Stops on entry to first AI action; no AI action executes."
+}

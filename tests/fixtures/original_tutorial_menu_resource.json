@@ -1,0 +1,104 @@
+{
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "resource_type": 5,
+  "resource_id": 279,
+  "language": 2052,
+  "rva": 827196,
+  "byte_size": 190,
+  "resource_sha256": "2d6df367731ce3508a16a4840bebd3831f7db4ec29c39bd7dc5107b0fd9909c3",
+  "dialog": {
+    "style": 2147483840,
+    "extended_style": 0,
+    "bounds_dlu": [
+      0,
+      0,
+      55,
+      77
+    ],
+    "menu": null,
+    "window_class": null,
+    "title": null,
+    "font": {
+      "point_size": 9,
+      "face": "宋体"
+    }
+  },
+  "controls": [
+    {
+      "id": 2,
+      "style": 1342242816,
+      "extended_style": 0,
+      "bounds_dlu": [
+        0,
+        63,
+        55,
+        14
+      ],
+      "window_class": {
+        "ordinal": 128
+      },
+      "text": "取消"
+    },
+    {
+      "id": 1287,
+      "style": 1342242816,
+      "extended_style": 0,
+      "bounds_dlu": [
+        0,
+        1,
+        55,
+        14
+      ],
+      "window_class": {
+        "ordinal": 128
+      },
+      "text": "攻击"
+    },
+    {
+      "id": 1288,
+      "style": 1342242816,
+      "extended_style": 0,
+      "bounds_dlu": [
+        0,
+        15,
+        55,
+        14
+      ],
+      "window_class": {
+        "ordinal": 128
+      },
+      "text": "策略"
+    },
+    {
+      "id": 1289,
+      "style": 1342242816,
+      "extended_style": 0,
+      "bounds_dlu": [
+        0,
+        29,
+        55,
+        14
+      ],
+      "window_class": {
+        "ordinal": 128
+      },
+      "text": "道具"
+    },
+    {
+      "id": 1291,
+      "style": 1342242816,
+      "extended_style": 0,
+      "bounds_dlu": [
+        0,
+        46,
+        55,
+        14
+      ],
+      "window_class": {
+        "ordinal": 128
+      },
+      "text": "待命"
+    }
+  ],
+  "boundaries": "Read-only extraction of this edition's original command-menu dialog template.\n\nThis decodes resource metadata, not dynamic enablement, positioning, input,\nbutton painting, or the original modal loop. No PE module is loaded/executed.\n"
+}

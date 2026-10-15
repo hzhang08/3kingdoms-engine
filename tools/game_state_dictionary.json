@@ -1,0 +1,2198 @@
+{
+  "schema_version": 1,
+  "dictionary_version": "1.0.2",
+  "executable_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "byte_order": "little",
+  "address_space": "preferred x86 virtual addresses in original-edition emulator; not PE file offsets",
+  "scope": "Opening tutorial exit, movement/cancellation and physical attacks; incomplete field semantics remain explicit. Observation captures are not resumable game saves.",
+  "evidence": {
+    "live": {
+      "path": "tools/movement_probe.py",
+      "anchor": "def live_json(v,slot):",
+      "scope": "Original36-byte live record decoded by movement and combat probes; labels apply to observed opening behavior."
+    },
+    "persistent": {
+      "path": "tools/initialization_probe.py",
+      "anchor": "def state(vm,uid):",
+      "scope": "Original72-byte persistent record; growth/join/equipment fixtures. Persistent HP/MP are not current battle HP/MP."
+    },
+    "portrait": {
+      "path": "tools/unit_probe.py",
+      "anchor": "'face_base':struct.unpack_from",
+      "scope": "Original record loader/portrait probe over512 characters at campaign stage zero."
+    },
+    "deployment": {
+      "path": "tools/deployment_probe.py",
+      "anchor": "def slots(v):",
+      "scope": "Original opening script deployment descriptors; no arbitrary later-battle selector semantics asserted."
+    },
+    "flags": {
+      "path": "docs/FORMATS.md",
+      "anchor": "clears action/movement flags",
+      "scope": "Original movement/attack/banner probes establish action2, moved4, mirror8 and scripted override128 in scoped paths; other bits remain unknown."
+    },
+    "move": {
+      "path": "tools/tutorial_actions_probe.py",
+      "anchor": "actual==bytes(expected)",
+      "scope": "Original cancellation preserves all live bytes except coordinates; compares occupancy, persistent records and RNG."
+    },
+    "status": {
+      "path": "tools/recovery_probe.py",
+      "anchor": "for status in (0,1,2,4,8,16,30,255)",
+      "scope": "Original abnormal-status recovery cases; dictionary keeps masks without inventing names for unverified bits."
+    },
+    "poison": {
+      "path": "src/recovery.cpp",
+      "anchor": "if(!(b.status&16))return 0;",
+      "scope": "Port of the original poison-maintenance fixture identifies poison bit16."
+    },
+    "strike": {
+      "path": "tools/strike_probe.py",
+      "anchor": "CONTROL=0x4927f0",
+      "scope": "Original strike plan fixture and controller inputs; damage stays a32-bit pattern because callers mix signed checks and unsigned arithmetic."
+    },
+    "strike_apply": {
+      "path": "tools/strike_application_probe.py",
+      "anchor": "unsigned setters",
+      "scope": "Original HP/MP application, wrap/cap behavior and automatic-item boundary; no automatic-item completion implied."
+    },
+    "rng": {
+      "path": "tools/executable_probe.py",
+      "anchor": "'multiply':1103515245",
+      "scope": "Original LCG state/output fixtures; modulo2^32 state, output(state>>16)&32767."
+    },
+    "tutorial": {
+      "path": "tools/tutorial_probe.py",
+      "anchor": "def setup():",
+      "scope": "Original tutorial setup with explicit collection bytes; no legacy save writes."
+    },
+    "camera": {
+      "path": "tools/tutorial_cursor_probe.py",
+      "anchor": "after==[255,255]",
+      "scope": "Original cursor clearing and camera-scroll lifetime; lower host raster/placement boundaries captured."
+    },
+    "overlay": {
+      "path": "tools/overlay_probe.py",
+      "anchor": "camera+0x68",
+      "scope": "Original painter probes: blue/green flags, covered-region and selection-cursor ordering."
+    },
+    "menu": {
+      "path": "tools/tutorial_menu_probe.py",
+      "anchor": "DIALOG=0x4b5e98",
+      "scope": "Original menu callbacks and enablement with supplied host window sizes; UI layout pixels remain provisional."
+    },
+    "controller": {
+      "path": "tools/controller_initialization_probe.py",
+      "anchor": "after[1:6]",
+      "scope": "Original bounded battle controller init; do not infer fields outside listed offsets."
+    },
+    "phase": {
+      "path": "tools/phase_transition_probe.py",
+      "anchor": "input_active=v.u32(CTRL+0x520)",
+      "scope": "Original phase transition input gate; stops before first AI action."
+    },
+    "script": {
+      "path": "tools/battle_events_probe.py",
+      "anchor": "READER=0x492f90",
+      "scope": "Original condition/event reader state and1024 variable slots; backing pointers are runtime addresses."
+    },
+    "reader": {
+      "path": "tools/deployment_probe.py",
+      "anchor": "expected_count=2",
+      "scope": "Typed argument count excludes string payload bytes; pointer and counter are distinct."
+    },
+    "map": {
+      "path": "tools/battle_initialization_probe.py",
+      "anchor": "v.put32(0x4aeb38+4,0x2580)",
+      "scope": "Original map-buffer descriptor is fixed; allocated buffer address in probes is a harness choice, not a game VA."
+    },
+    "route": {
+      "path": "tools/route_probe.py",
+      "anchor": "does not append a terminator",
+      "scope": "Original route scratch includes stale bytes; preserve all256 bytes rather than stopping at sentinel."
+    },
+    "priority": {
+      "path": "tools/ai_priority_probe.py",
+      "anchor": "Only priority bytes may change.",
+      "scope": "Original AI-priority execution checks that only live byte11 changes."
+    },
+    "stat_axes": {
+      "path": "src/combat_rules.cpp",
+      "anchor": "in.defense=battle_stat(b,bu,1,data);",
+      "scope": "Battle-stat index mapping in the differential-tested port: attack0, defense1, spirit2, agility3 and morale4."
+    },
+    "speech": {
+      "path": "include/caocao/strike.hpp",
+      "anchor": "persistent offset 0x26",
+      "scope": "Original critical-speech group field used by critical_speech_probe.py."
+    },
+    "live_baseline": {
+      "path": "tests/test_game_state.py",
+      "anchor": "def old_live(row):",
+      "scope": "Frozen byte decoder from movement_probe.py before dictionary migration; independently checks all decoded values without reading dictionary offsets."
+    },
+    "persistent_baseline": {
+      "path": "tests/test_game_state.py",
+      "anchor": "def old_unit(row, uid):",
+      "scope": "Frozen byte decoder from initialization_probe.py before dictionary migration; checks512 raw records and original fixture regeneration."
+    },
+    "phase_maintenance": {
+      "path": "tools/phase_maintenance_probe.py",
+      "anchor": "run('poison'",
+      "scope": "Sequential fresh-profile turn-two recovery, NPC poison numeric display before HP write, then regeneration. Host client origin explicitly supplied; no Windows window creation or player input."
+    },
+    "player_action": {
+      "path": "tools/player_action_probe.py",
+      "anchor": "0x4b0770+0x26b",
+      "scope": "1106 original movement/menu/wait/cancel cases with explicit tile/modal inputs. Tests availability and persistent/RNG invariance, not attack/tactic/item execution."
+    },
+    "player_input": {
+      "path": "tools/player_input_probe.py",
+      "anchor": "0x44e3a9",
+      "scope": "Original loop with explicit host inputs. Retained hover, wait/cancel dispatch, event/death order and remaining-unit scan; window/raster boundaries supplied."
+    }
+  },
+  "structures": {
+    "live_units": {
+      "name": "Live battle units",
+      "size": 36,
+      "stride": 36,
+      "count": 115,
+      "location": {
+        "kind": "fixed",
+        "address": 4926544
+      },
+      "evidence": [
+        "live"
+      ],
+      "scope": "Original36-byte live record decoded by movement and combat probes; labels apply to observed opening behavior.",
+      "fields": [
+        {
+          "name": "id",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "slot",
+          "offset": 4,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "side",
+          "offset": 5,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "partial",
+          "evidence": [
+            "live",
+            "deployment",
+            "live_baseline"
+          ],
+          "note": "Side byte is distinct from slot-based allegiance checks; unknown codes are preserved.",
+          "enum": {
+            "0": "player",
+            "1": "ally",
+            "2": "enemy"
+          }
+        },
+        {
+          "name": "x",
+          "offset": 6,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "y",
+          "offset": 7,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "target_slot",
+          "offset": 8,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope.",
+          "sentinels": {
+            "255": "no target / unspecified in tested callers"
+          }
+        },
+        {
+          "name": "target_x",
+          "offset": 9,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope.",
+          "sentinels": {
+            "255": "no target / unspecified in tested callers"
+          }
+        },
+        {
+          "name": "target_y",
+          "offset": 10,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope.",
+          "sentinels": {
+            "255": "no target / unspecified in tested callers"
+          }
+        },
+        {
+          "name": "priority",
+          "offset": 11,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "partial",
+          "evidence": [
+            "priority"
+          ],
+          "note": "Live+11 is assigned by AI priority routines; total ordering semantics are outside this field definition."
+        },
+        {
+          "name": "lifecycle",
+          "offset": 12,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "0": "unused",
+            "1": "hidden/not deployed",
+            "2": "visible on battlefield",
+            "3": "retired in observed removal paths"
+          }
+        },
+        {
+          "name": "flags",
+          "offset": 13,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "partial",
+          "evidence": [
+            "flags"
+          ],
+          "note": "Unknown bits retained. Bit32 participates in strike reaction but its general meaning is not assigned.",
+          "flags": {
+            "2": "acted",
+            "4": "moved",
+            "8": "sprite mirror",
+            "128": "scripted movement/control override"
+          }
+        },
+        {
+          "name": "ai",
+          "offset": 14,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "direction",
+          "offset": 15,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "move"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "0": "north",
+            "1": "east",
+            "2": "south",
+            "3": "west"
+          }
+        },
+        {
+          "name": "hp",
+          "offset": 16,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "points",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline",
+            "phase_maintenance"
+          ],
+          "note": "Current battle HP; distinct from persistent maximum HP. Original poison450984 displays from pre-mutation HP;44df61 writes HP only after the panel returns. Fresh turn-two ally210 changes44 to33."
+        },
+        {
+          "name": "mp",
+          "offset": 20,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "points",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "live_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "grades",
+          "offset": 24,
+          "type": "u8",
+          "count": 6,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "observed",
+          "evidence": [
+            "live",
+            "stat_axes",
+            "live_baseline"
+          ],
+          "note": "Neutral grade3; raw0..6 values retained. Stat order follows original getter callers.",
+          "element_names": [
+            "attack",
+            "defense",
+            "spirit",
+            "agility",
+            "morale",
+            "movement"
+          ]
+        },
+        {
+          "name": "status",
+          "offset": 30,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "index/flags",
+          "confidence": "partial",
+          "evidence": [
+            "status",
+            "poison"
+          ],
+          "note": "Only poison label is assigned; raw masks2/4/8 are tested by recovery but retained as unknown bits here.",
+          "flags": {
+            "16": "poison"
+          }
+        }
+      ]
+    },
+    "persistent_units": {
+      "name": "Persistent character records",
+      "size": 72,
+      "stride": 72,
+      "count": 512,
+      "location": {
+        "kind": "fixed",
+        "address": 4856680
+      },
+      "evidence": [
+        "persistent"
+      ],
+      "scope": "Original72-byte persistent record; growth/join/equipment fixtures. Persistent HP/MP are not current battle HP/MP.",
+      "fields": [
+        {
+          "name": "story_sprite",
+          "offset": 2,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "portrait"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "face_base",
+          "offset": 4,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "portrait"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "stats",
+          "offset": 21,
+          "type": "u8",
+          "count": 5,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "stat_axes",
+            "persistent_baseline"
+          ],
+          "note": "See cited probe and structure scope.",
+          "element_names": [
+            "attack",
+            "defense",
+            "spirit",
+            "agility",
+            "morale"
+          ]
+        },
+        {
+          "name": "hp",
+          "offset": 28,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "base/level-grown HP",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "Persistent stat used to compute maximum HP; distinct from live current HP and equipment-adjusted maximum."
+        },
+        {
+          "name": "mp",
+          "offset": 32,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "base/level-grown MP",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "Persistent stat used to compute maximum MP; distinct from live current MP."
+        },
+        {
+          "name": "base_stats",
+          "offset": 33,
+          "type": "u8",
+          "count": 5,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "Growth attributes, not current combat statistics. Last byte is also read as base luck by recovery.",
+          "element_names": [
+            "attack_growth_attribute",
+            "defense_growth_attribute",
+            "spirit_growth_attribute",
+            "agility_growth_attribute",
+            "luck"
+          ]
+        },
+        {
+          "name": "speech_group",
+          "offset": 38,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "speech"
+          ],
+          "note": "Critical-speech lookup group; see include/caocao/strike.hpp."
+        },
+        {
+          "name": "record_counters",
+          "offset": 39,
+          "type": "u8",
+          "count": 3,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "Raw record counters; individual meanings intentionally unassigned."
+        },
+        {
+          "name": "owner",
+          "offset": 42,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "class",
+          "offset": 43,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "level",
+          "offset": 44,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "xp",
+          "offset": 45,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "equipment",
+          "offset": 46,
+          "type": "u8",
+          "count": 9,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "persistent",
+            "persistent_baseline"
+          ],
+          "note": "Three triples(ID,level,XP). ID255 denotes empty;255 in other components is preserved without assuming the same meaning.",
+          "shape": [
+            3,
+            3
+          ],
+          "element_names": [
+            "weapon.id",
+            "weapon.level",
+            "weapon.xp",
+            "armor.id",
+            "armor.level",
+            "armor.xp",
+            "accessory.id",
+            "accessory.level",
+            "accessory.xp"
+          ]
+        }
+      ]
+    },
+    "deployment": {
+      "name": "Scenario deployment descriptors",
+      "size": 64,
+      "stride": 64,
+      "count": 115,
+      "location": {
+        "kind": "fixed",
+        "address": 4804564
+      },
+      "evidence": [
+        "deployment"
+      ],
+      "scope": "Original opening script deployment descriptors; no arbitrary later-battle selector semantics asserted.",
+      "fields": [
+        {
+          "name": "id",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope.",
+          "sentinels": {
+            "65535": "unused descriptor"
+          }
+        },
+        {
+          "name": "x",
+          "offset": 4,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "y",
+          "offset": 5,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "flags",
+          "offset": 8,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "ai",
+          "offset": 12,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "target",
+          "offset": 14,
+          "type": "u16",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "promotion_mode",
+          "offset": 16,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "level",
+          "offset": 17,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "weapon_level",
+          "offset": 32,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "armor_level",
+          "offset": 33,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "equipment_overrides",
+          "offset": 20,
+          "type": "u32",
+          "count": 3,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "deployment"
+          ],
+          "note": "Encoded script overrides, not necessarily raw item IDs; do not collapse sentinel/encoding values."
+        }
+      ]
+    },
+    "rng": {
+      "name": "Original random-number state",
+      "size": 4,
+      "stride": 4,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4779220
+      },
+      "evidence": [
+        "rng"
+      ],
+      "scope": "Original LCG state/output fixtures; modulo2^32 state, output(state>>16)&32767.",
+      "fields": [
+        {
+          "name": "state",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "LCG bits",
+          "confidence": "observed",
+          "evidence": [
+            "rng",
+            "phase_maintenance"
+          ],
+          "note": "state=(state*1103515245+12345) modulo2^32; output=(state>>16)&32767. Turn-two status recovery advances340946258 to601077795 before poison; the captured poison display/HP mutation does not advance RNG."
+        }
+      ]
+    },
+    "attack": {
+      "name": "Physical strike controller",
+      "size": 1556,
+      "stride": 1556,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4794352
+      },
+      "evidence": [
+        "strike"
+      ],
+      "scope": "Original strike plan fixture and controller inputs; damage stays a32-bit pattern because callers mix signed checks and unsigned arithmetic.",
+      "fields": [
+        {
+          "name": "actor_slot",
+          "offset": 0,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "primary_target_slot",
+          "offset": 1,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "actor_id",
+          "offset": 4,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "actor_record",
+          "offset": 8,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope.",
+          "target_structure": "persistent_units"
+        },
+        {
+          "name": "actor_live",
+          "offset": 12,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope.",
+          "target_structure": "live_units"
+        },
+        {
+          "name": "targets",
+          "offset": 16,
+          "type": "u8",
+          "count": 116,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "Storage capacity116 includes sentinel; bytes after first255 remain raw scratch and are not active targets.",
+          "sentinels": {
+            "255": "ordered target-list terminator"
+          }
+        },
+        {
+          "name": "hp_damage",
+          "offset": 132,
+          "type": "bits32",
+          "count": 116,
+          "signedness": "context-dependent",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike_apply"
+          ],
+          "note": "Preserve unsigned raw word and signed interpretation; original callers use unsigned subtraction plus signed positive-damage checks. Entries align with ordered target positions, not live slot IDs."
+        },
+        {
+          "name": "mp_damage",
+          "offset": 596,
+          "type": "bits32",
+          "count": 116,
+          "signedness": "context-dependent",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike_apply"
+          ],
+          "note": "Preserve unsigned raw word and signed interpretation; original callers use unsigned subtraction plus signed positive-damage checks. Entries align with ordered target positions, not live slot IDs."
+        },
+        {
+          "name": "area_mode",
+          "offset": 1060,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike_apply"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "xp",
+          "offset": 1064,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "weapon_xp",
+          "offset": 1068,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "armor_xp",
+          "offset": 1072,
+          "type": "u32",
+          "count": 116,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "actor_is_player",
+          "offset": 1536,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "critical",
+          "offset": 1540,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "round",
+          "offset": 1544,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "Strike-round byte; verified ordinary0 and follow-up1; not the scenario turn count."
+        }
+      ]
+    },
+    "counter": {
+      "name": "Physical counterattack state",
+      "size": 4,
+      "stride": 4,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4795908
+      },
+      "evidence": [
+        "strike"
+      ],
+      "scope": "Original strike plan fixture and controller inputs; damage stays a32-bit pattern because callers mix signed checks and unsigned arithmetic.",
+      "fields": [
+        {
+          "name": "depth",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "tutorial": {
+      "name": "Opening tutorial state",
+      "size": 22,
+      "stride": 22,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4926468
+      },
+      "evidence": [
+        "tutorial"
+      ],
+      "scope": "Original tutorial setup with explicit collection bytes; no legacy save writes.",
+      "fields": [
+        {
+          "name": "unit_pointer_c",
+          "offset": 0,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "Original setup captures three live-unit pointers. Only guide role is assigned; other pointer roles remain descriptive.",
+          "target_structure": "live_units"
+        },
+        {
+          "name": "unit_pointer_b",
+          "offset": 8,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "Original setup captures three live-unit pointers. Only guide role is assigned; other pointer roles remain descriptive.",
+          "target_structure": "live_units"
+        },
+        {
+          "name": "guide_pointer",
+          "offset": 16,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "Original setup captures three live-unit pointers. Only guide role is assigned; other pointer roles remain descriptive.",
+          "target_structure": "live_units"
+        },
+        {
+          "name": "all_treasures",
+          "offset": 4,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "completed_routes",
+          "offset": 12,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "Count of nonzero completion bytes among three collection entries; not the original three-bit input mask."
+        },
+        {
+          "name": "cursor",
+          "offset": 20,
+          "type": "u8",
+          "count": 2,
+          "signedness": "unsigned",
+          "units": "world tiles",
+          "confidence": "observed",
+          "evidence": [
+            "tutorial"
+          ],
+          "note": "See cited probe and structure scope.",
+          "element_names": [
+            "x",
+            "y"
+          ],
+          "sentinels": {
+            "255": "unspecified"
+          }
+        }
+      ]
+    },
+    "camera": {
+      "name": "Camera and overlay state prefix",
+      "size": 112,
+      "stride": 112,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4932176
+      },
+      "evidence": [
+        "camera"
+      ],
+      "scope": "Known prefix only; object extends beyond0x70. Unknown bytes retained. Pixel origins and camera-relative tile cursors must not be mixed.",
+      "fields": [
+        {
+          "name": "pixel_x",
+          "offset": 4,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "Preserve raw32-bit word and signed view; native placement uses signed pixel arithmetic. Origins are not tile indices."
+        },
+        {
+          "name": "pixel_y",
+          "offset": 8,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "Preserve raw32-bit word and signed view; native placement uses signed pixel arithmetic. Origins are not tile indices."
+        },
+        {
+          "name": "viewport_width",
+          "offset": 20,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "Preserve raw32-bit word and signed view; native placement uses signed pixel arithmetic. Origins are not tile indices."
+        },
+        {
+          "name": "viewport_height",
+          "offset": 24,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "Preserve raw32-bit word and signed view; native placement uses signed pixel arithmetic. Origins are not tile indices."
+        },
+        {
+          "name": "client_x",
+          "offset": 60,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "phase_maintenance"
+          ],
+          "note": "Client drawing origin returned by451a4f/451a60; distinct from world camera pixel_x/pixel_y. Original panel placement adds this origin to tile*48. Headless probes explicitly supply0,56; this is not proof of Windows client initialization."
+        },
+        {
+          "name": "client_y",
+          "offset": 64,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "phase_maintenance"
+          ],
+          "note": "Client drawing origin returned by451a4f/451a60; distinct from world camera pixel_x/pixel_y. Original panel placement adds this origin to tile*48. Headless probes explicitly supply0,56; this is not proof of Windows client initialization."
+        },
+        {
+          "name": "covered_rect",
+          "offset": 68,
+          "type": "u8",
+          "count": 4,
+          "signedness": "unsigned",
+          "units": "camera-relative tiles",
+          "confidence": "observed",
+          "evidence": [
+            "overlay"
+          ],
+          "note": "See cited probe and structure scope.",
+          "element_names": [
+            "x",
+            "y",
+            "width",
+            "height"
+          ]
+        },
+        {
+          "name": "covered",
+          "offset": 80,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "overlay"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "selection_cursor",
+          "offset": 84,
+          "type": "u8",
+          "count": 2,
+          "signedness": "unsigned",
+          "units": "camera-relative tiles",
+          "confidence": "observed",
+          "evidence": [
+            "camera"
+          ],
+          "note": "World position adds camera pixel origin divided by48. Both255 means no selection; scrolling clears these bytes even without displacement.",
+          "element_names": [
+            "x",
+            "y"
+          ],
+          "sentinels": {
+            "255": "no cursor"
+          }
+        },
+        {
+          "name": "cursor_style",
+          "offset": 97,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "overlay"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "blue_movement",
+          "offset": 100,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "overlay"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "green_movement",
+          "offset": 104,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "overlay"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "command_menu": {
+      "name": "Command menu object prefix",
+      "size": 68,
+      "stride": 68,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4939416
+      },
+      "evidence": [
+        "menu",
+        "player_action"
+      ],
+      "scope": "Original menu callbacks and enablement with supplied host window sizes; UI layout pixels remain provisional. Player command availability, wait and cancellation also execute in the selected-unit parent controller.",
+      "fields": [
+        {
+          "name": "window_handle",
+          "offset": 4,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "menu"
+          ],
+          "note": "Opaque HWND value, not a pointer to a decoded memory structure."
+        },
+        {
+          "name": "result",
+          "offset": 40,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "See cited probe and structure scope.",
+          "enum": {
+            "1": "attack",
+            "2": "tactic",
+            "3": "item",
+            "4": "standby",
+            "255": "cancel/no selection"
+          }
+        },
+        {
+          "name": "anchor_x",
+          "offset": 44,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "anchor_y",
+          "offset": 48,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "pixels",
+          "confidence": "observed",
+          "evidence": [
+            "menu"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "attack_enabled",
+          "offset": 52,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "player_action"
+          ],
+          "note": "Original43e273 attack-range result has a target; original distance/threat/mask grids and ordered target list are compared.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "tactic_enabled",
+          "offset": 56,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "player_action"
+          ],
+          "note": "Original43dde3 enables for any class/level-unlocked tactic, including cardinal neighbors when equipment effect51 is present. This menu layer does not filter MP, silence, neighbor allegiance or neighbor HP. Castability is separate.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "item_enabled",
+          "offset": 60,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "player_action"
+          ],
+          "note": "Original40d9ee returns whether any of the17 consumable stock bytes is nonzero; no target/usable-item check here.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        },
+        {
+          "name": "standby_enabled",
+          "offset": 64,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "boolean storage",
+          "confidence": "observed",
+          "evidence": [
+            "menu",
+            "player_action"
+          ],
+          "note": "Original menu initializer enables standby. Selecting4 sets live flags2 and4; parent returns1. Tutorial demonstration remains a separate non-gameplay path.",
+          "enum": {
+            "0": "false",
+            "1": "true"
+          }
+        }
+      ]
+    },
+    "battle": {
+      "name": "Battle controller prefix",
+      "size": 25,
+      "stride": 25,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4930824
+      },
+      "evidence": [
+        "controller"
+      ],
+      "scope": "Original bounded battle controller init; do not infer fields outside listed offsets.",
+      "fields": [
+        {
+          "name": "outcome",
+          "offset": 1,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script",
+            "player_input"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes. In the verified player loop, raw5 returns immediately and raw6 requests end-turn confirmation then resets to0; these are UI commands, not victory/defeat values."
+        },
+        {
+          "name": "turn_minus_one",
+          "offset": 2,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "Stored turn count is zero-based; displayed turn adds1."
+        },
+        {
+          "name": "turn_limit",
+          "offset": 3,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "controller"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes."
+        },
+        {
+          "name": "environment_selector",
+          "offset": 4,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "controller"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes."
+        },
+        {
+          "name": "animation_tick",
+          "offset": 5,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "controller"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes."
+        },
+        {
+          "name": "phase",
+          "offset": 16,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes."
+        },
+        {
+          "name": "region",
+          "offset": 17,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "controller"
+          ],
+          "note": "Raw value; enum semantics not extrapolated beyond original probes."
+        }
+      ]
+    },
+    "input_gate": {
+      "name": "Battle input gate",
+      "size": 4,
+      "stride": 4,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4932136
+      },
+      "evidence": [
+        "phase"
+      ],
+      "scope": "Original phase transition input gate; stops before first AI action.",
+      "fields": [
+        {
+          "name": "active",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "phase"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "script_reader": {
+      "name": "EEX reader prefix",
+      "size": 56,
+      "stride": 56,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4796304
+      },
+      "evidence": [
+        "script"
+      ],
+      "scope": "Original condition/event reader state and1024 variable slots; backing pointers are runtime addresses.",
+      "fields": [
+        {
+          "name": "vtable",
+          "offset": 0,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "mode",
+          "offset": 4,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "argument_byte_count",
+          "offset": 8,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "reader"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "cursor",
+          "offset": 12,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "reader"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "storage_blocks",
+          "offset": 28,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "script_base",
+          "offset": 32,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "event_index",
+          "offset": 36,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "section",
+          "offset": 40,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "script"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "script_variables": {
+      "name": "EEX numeric variable slots",
+      "size": 4,
+      "stride": 4,
+      "count": 1024,
+      "location": {
+        "kind": "fixed",
+        "address": 4796360
+      },
+      "evidence": [
+        "script"
+      ],
+      "scope": "Original condition/event reader state and1024 variable slots; backing pointers are runtime addresses.",
+      "fields": [
+        {
+          "name": "value",
+          "offset": 0,
+          "type": "bits32",
+          "count": 1,
+          "signedness": "context-dependent",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "script"
+          ],
+          "note": "Raw32-bit script slot; tested opening event flags often use0/1, but do not force boolean semantics or signedness for all slots."
+        }
+      ]
+    },
+    "priority_target": {
+      "name": "Script priority-target field",
+      "size": 2,
+      "stride": 2,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4811926
+      },
+      "evidence": [
+        "strike"
+      ],
+      "scope": "Original strike plan fixture and controller inputs; damage stays a32-bit pattern because callers mix signed checks and unsigned arithmetic.",
+      "fields": [
+        {
+          "name": "unit_id",
+          "offset": 0,
+          "type": "u16",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "strike"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "map_dimensions": {
+      "name": "Map dimensions",
+      "size": 2,
+      "stride": 2,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4932140
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Original map-buffer descriptor is fixed; allocated buffer address in probes is a harness choice, not a game VA.",
+      "fields": [
+        {
+          "name": "width",
+          "offset": 0,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "map"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "height",
+          "offset": 1,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "tiles",
+          "confidence": "observed",
+          "evidence": [
+            "map"
+          ],
+          "note": "See cited probe and structure scope."
+        }
+      ]
+    },
+    "map_buffer": {
+      "name": "Map buffer descriptor prefix",
+      "size": 20,
+      "stride": 20,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4909880
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Original map-buffer descriptor is fixed; allocated buffer address in probes is a harness choice, not a game VA.",
+      "fields": [
+        {
+          "name": "capacity",
+          "offset": 4,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "bytes",
+          "confidence": "observed",
+          "evidence": [
+            "map"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "data",
+          "offset": 12,
+          "type": "ptr32",
+          "count": 1,
+          "signedness": "unsigned address",
+          "units": "raw integer",
+          "confidence": "observed",
+          "evidence": [
+            "map"
+          ],
+          "note": "See cited probe and structure scope."
+        },
+        {
+          "name": "owned_flag",
+          "offset": 16,
+          "type": "u8",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "raw integer",
+          "confidence": "partial",
+          "evidence": [
+            "map"
+          ],
+          "note": "Probe supplies1; complete allocator/ownership semantics unverified."
+        }
+      ]
+    },
+    "terrain": {
+      "name": "Terrain buffer",
+      "size": 1600,
+      "stride": 1600,
+      "count": 1,
+      "location": {
+        "kind": "pointer",
+        "pointer_at": 4909892,
+        "capacity_at": 4909884,
+        "offset": 1600
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Resolved via actual map-buffer pointer, never hardcoded harness address. Plane capacity is1600 bytes; only width*height cells are active.",
+      "fields": [
+        {
+          "name": "bytes",
+          "offset": 0,
+          "type": "u8",
+          "count": 1600,
+          "signedness": "unsigned",
+          "units": "cell byte",
+          "confidence": "partial",
+          "evidence": [
+            "map"
+          ],
+          "note": "Preserve all bytes, including unused/stale capacity; current map dimensions define active cell range."
+        }
+      ]
+    },
+    "occupancy": {
+      "name": "Occupancy buffer",
+      "size": 1600,
+      "stride": 1600,
+      "count": 1,
+      "location": {
+        "kind": "pointer",
+        "pointer_at": 4909892,
+        "capacity_at": 4909884,
+        "offset": 3200
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Resolved via actual map-buffer pointer, never hardcoded harness address. Plane capacity is1600 bytes; only width*height cells are active.",
+      "fields": [
+        {
+          "name": "bytes",
+          "offset": 0,
+          "type": "u8",
+          "count": 1600,
+          "signedness": "unsigned",
+          "units": "cell byte",
+          "confidence": "partial",
+          "evidence": [
+            "map"
+          ],
+          "note": "Preserve all bytes, including unused/stale capacity; current map dimensions define active cell range.",
+          "sentinels": {
+            "255": "empty"
+          }
+        }
+      ]
+    },
+    "distance": {
+      "name": "Distance buffer",
+      "size": 1600,
+      "stride": 1600,
+      "count": 1,
+      "location": {
+        "kind": "pointer",
+        "pointer_at": 4909892,
+        "capacity_at": 4909884,
+        "offset": 4800
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Resolved via actual map-buffer pointer, never hardcoded harness address. Plane capacity is1600 bytes; only width*height cells are active.",
+      "fields": [
+        {
+          "name": "bytes",
+          "offset": 0,
+          "type": "u8",
+          "count": 1600,
+          "signedness": "unsigned",
+          "units": "cell byte",
+          "confidence": "partial",
+          "evidence": [
+            "map"
+          ],
+          "note": "Preserve all bytes, including unused/stale capacity; current map dimensions define active cell range."
+        }
+      ]
+    },
+    "route": {
+      "name": "Route buffer",
+      "size": 256,
+      "stride": 256,
+      "count": 1,
+      "location": {
+        "kind": "pointer",
+        "pointer_at": 4909892,
+        "capacity_at": 4909884,
+        "offset": 6400
+      },
+      "evidence": [
+        "route"
+      ],
+      "scope": "Original route scratch includes stale bytes; preserve all256 bytes rather than stopping at sentinel.",
+      "fields": [
+        {
+          "name": "bytes",
+          "offset": 0,
+          "type": "u8",
+          "count": 256,
+          "signedness": "unsigned",
+          "units": "route scratch byte",
+          "confidence": "partial",
+          "evidence": [
+            "route"
+          ],
+          "note": "Original route scratch includes stale bytes; preserve all256 bytes rather than stopping at sentinel."
+        }
+      ]
+    },
+    "terrain_effects": {
+      "name": "Terrain Effects buffer",
+      "size": 1600,
+      "stride": 1600,
+      "count": 1,
+      "location": {
+        "kind": "pointer",
+        "pointer_at": 4909892,
+        "capacity_at": 4909884,
+        "offset": 8000
+      },
+      "evidence": [
+        "map"
+      ],
+      "scope": "Resolved via actual map-buffer pointer, never hardcoded harness address. Plane capacity is1600 bytes; only width*height cells are active.",
+      "fields": [
+        {
+          "name": "bytes",
+          "offset": 0,
+          "type": "u8",
+          "count": 1600,
+          "signedness": "unsigned",
+          "units": "cell byte",
+          "confidence": "partial",
+          "evidence": [
+            "map"
+          ],
+          "note": "Preserve all bytes, including unused/stale capacity; current map dimensions define active cell range.",
+          "sentinels": {
+            "255": "empty"
+          }
+        }
+      ]
+    },
+    "consumables": {
+      "name": "Consumable stock bytes",
+      "size": 17,
+      "stride": 17,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4917723
+      },
+      "evidence": [
+        "player_action"
+      ],
+      "scope": "17 byte stock entries used by40d9ee menu availability. Item-ID mapping is not asserted by these availability fixtures.",
+      "fields": [
+        {
+          "name": "counts",
+          "offset": 0,
+          "type": "u8",
+          "count": 17,
+          "signedness": "unsigned",
+          "units": "stock count",
+          "confidence": "observed",
+          "evidence": [
+            "player_action"
+          ],
+          "note": "Each independently supplied entry with value1 or255 enables item menu; all-zero stock disables it. No use/decrement semantics established."
+        }
+      ]
+    },
+    "player_panel_retention": {
+      "name": "Player loop panel retention gate",
+      "size": 4,
+      "stride": 4,
+      "count": 1,
+      "location": {
+        "kind": "fixed",
+        "address": 4932104
+      },
+      "evidence": [
+        "player_input"
+      ],
+      "scope": "Known read/reset behavior only; not all writers or complete UI semantics.",
+      "fields": [
+        {
+          "name": "gate",
+          "offset": 0,
+          "type": "u32",
+          "count": 1,
+          "signedness": "unsigned",
+          "units": "nonzero gate",
+          "confidence": "observed",
+          "evidence": [
+            "player_input"
+          ],
+          "note": "44e355 retains previous hovered slot on an empty/outside tile when this field is nonzero, tileY is255, and the main window has focus. Clearing a covered panel on the empty-tile path also zeros the field. Inputs are supplied host state."
+        }
+      ]
+    }
+  }
+}
